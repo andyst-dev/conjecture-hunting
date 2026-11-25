@@ -1,0 +1,6 @@
+build/
+cdm
+cdm_test
+geng_mtf
+geng
+*.o
