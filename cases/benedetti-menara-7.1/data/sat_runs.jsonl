@@ -1,0 +1,24 @@
+{"r": 2, "m": 4, "layers_asked": 4, "flag": false, "sat": true, "secs": 0.0, "family": [[[0, 2]], [[0, 3], [1, 2]], [[0, 1], [2, 3]], [[1, 3]]]}
+{"r": 2, "m": 3, "layers_asked": 3, "flag": true, "sat": false, "secs": 0.0, "family": null}
+{"r": 2, "m": 4, "layers_asked": 4, "flag": true, "sat": false, "secs": 0.0, "family": null}
+{"r": 2, "m": 5, "layers_asked": 5, "flag": true, "sat": false, "secs": 0.0, "family": null}
+{"r": 2, "m": 6, "layers_asked": 6, "flag": true, "sat": false, "secs": 0.05, "family": null}
+{"r": 2, "m": 7, "layers_asked": 7, "flag": true, "sat": false, "secs": 1.36, "family": null}
+{"r": 2, "m": 8, "layers_asked": 8, "flag": true, "sat": false, "secs": 24.7, "family": null}
+{"r": 2, "m": 6, "layers_asked": 5, "flag": true, "sat": true, "secs": 0.0, "family": [[[0, 5]], [[1, 5]], [[3, 5]], [[2, 5]], [[4, 5]]]}
+{"r": 3, "m": 6, "layers_asked": 4, "flag": true, "sat": true, "secs": 0.0, "family": [[[0, 2, 5]], [[0, 1, 2], [0, 3, 5]], [[0, 1, 3], [1, 2, 4], [3, 4, 5]], [[1, 3, 4]]]}
+{"r": 4, "m": 7, "layers_asked": 4, "flag": true, "sat": true, "secs": 0.01, "family": [[[0, 2, 5, 6]], [[0, 1, 2, 5], [0, 3, 5, 6]], [[0, 1, 3, 5], [1, 2, 4, 5], [3, 4, 5, 6]], [[1, 3, 4, 5]]]}
+{"r": 3, "m": 4, "layers_asked": 3, "flag": true, "sat": false, "secs": 0.0, "family": null}
+{"r": 3, "m": 5, "layers_asked": 4, "flag": true, "sat": false, "secs": 0.0, "family": null}
+{"r": 3, "m": 6, "layers_asked": 5, "flag": true, "sat": false, "secs": 0.07, "family": null}
+{"r": 3, "m": 7, "layers_asked": 6, "flag": true, "sat": false, "secs": 2.34, "family": null}
+{"r": 3, "m": 8, "layers_asked": 7, "flag": true, "sat": false, "secs": 168.48, "family": null}
+{"r": 4, "m": 5, "layers_asked": 3, "flag": true, "sat": false, "secs": 0.0, "family": null}
+{"r": 4, "m": 6, "layers_asked": 4, "flag": true, "sat": false, "secs": 0.02, "family": null}
+{"r": 4, "m": 7, "layers_asked": 5, "flag": true, "sat": false, "secs": 0.53, "family": null}
+{"r": 4, "m": 8, "layers_asked": 6, "flag": true, "sat": false, "secs": 42.8, "family": null}
+{"r": 5, "m": 6, "layers_asked": 3, "flag": true, "sat": false, "secs": 0.0, "family": null}
+{"r": 5, "m": 7, "layers_asked": 4, "flag": true, "sat": false, "secs": 0.06, "family": null}
+{"r": 5, "m": 8, "layers_asked": 5, "flag": true, "sat": false, "secs": 3.0, "family": null}
+{"r": 6, "m": 7, "layers_asked": 3, "flag": true, "sat": false, "secs": 0.0, "family": null}
+{"r": 6, "m": 8, "layers_asked": 4, "flag": true, "sat": false, "secs": 0.2, "family": null}

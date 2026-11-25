@@ -12,6 +12,7 @@ All work here is **AI-assisted and unrefereed**. The protocol every case follows
 |---|---|---|
 | [Khan–Haidar, Conj. 7.6](cases/khan-haidar-7.6/CASE.md) | arXiv:2611.21670 | No counterexample in the classes searched; 2 resistance-regular graphs not among the paper's listed examples |
 | [Costa–Luu–Wood–Yip, CDM](cases/cdm-alpha2/CASE.md) | arXiv:2512.17114 | No counterexample on ≤ 17 vertices, exhaustive (paper: ≤ 11); reduction to maximal triangle-free graphs |
+| [Benedetti–Menara, Conj. 7.1](cases/benedetti-menara-7.1/CASE.md) | arXiv:2611.08071 | Proved for all m ≤ 8 by SAT (paper: random tests only) |
 | [GMR inequality in small groups](cases/gmr-small-groups/CASE.md) | arXiv:2611.12776 (Q9.4) | No counterexample of order < 243 in the families searched (heuristic, calibrated on the paper's 243 witness) |
 | [Notik, Singer rulers and chambers (§7)](cases/notik-singer-golomb/CASE.md) | arXiv:2611.22656 | Verified for m ≤ 113 and m = 121 (paper: m ≤ 103); chain reduction of the chamber LP |
 
