@@ -1,0 +1,1 @@
+k=5 S=16: RR non-regular hits=0, float violations=0

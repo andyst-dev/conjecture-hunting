@@ -1,0 +1,2 @@
+configs: 276889600
+polycirculant k=3 N=7 exh: hits=0 violations=0

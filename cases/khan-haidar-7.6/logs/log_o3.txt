@@ -1,0 +1,1 @@
+orbit search kmax=7 maxorb=3 S=45 types=['K', 'I']: hits=45 violations=0
