@@ -1,0 +1,3 @@
+n=14: 40/40 colourings have wld <= 9 (23s)
+n=16: 40/40 colourings have wld <= 10 (124s)
+n=18: 40/40 colourings have wld <= 12 (97s)
