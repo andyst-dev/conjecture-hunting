@@ -1,0 +1,176 @@
+A4                     |G|= 12 pair=(1,2) n= 4 best ratio=0.77160
+A4                     |G|= 12 pair=(1,2) n= 5 best ratio=0.35117
+A4                     |G|= 12 pair=(1,2) n= 6 best ratio=0.50000
+A4                     |G|= 12 pair=(1,2) n= 7 best ratio=0.50000
+A4                     |G|= 12 pair=(1,2) n= 8 best ratio=0.50000
+A4                     |G|= 12 pair=(1,2) n= 9 best ratio=0.33333
+A4                     |G|= 12 pair=(1,2) n=10 best ratio=0.33333
+A4                     |G|= 12 pair=(1,2) n=11 best ratio=0.33333
+A4                     |G|= 12 pair=(1,2) n=12 best ratio=0.33333
+A4                     |G|= 12 pair=(1,2) n=13 best ratio=0.08333
+A4                     |G|= 12 pair=(1,2) n=14 best ratio=0.08333
+A4                     |G|= 12 pair=(9,10) n= 4 best ratio=0.77160
+A4                     |G|= 12 pair=(9,10) n= 5 best ratio=0.50000
+A4                     |G|= 12 pair=(9,10) n= 6 best ratio=0.50000
+A4                     |G|= 12 pair=(9,10) n= 7 best ratio=0.46296
+A4                     |G|= 12 pair=(9,10) n= 8 best ratio=0.33333
+A4                     |G|= 12 pair=(9,10) n= 9 best ratio=0.33333
+A4                     |G|= 12 pair=(9,10) n=10 best ratio=0.33333
+A4                     |G|= 12 pair=(9,10) n=11 best ratio=0.33333
+A4                     |G|= 12 pair=(9,10) n=12 best ratio=0.08333
+A4                     |G|= 12 pair=(9,10) n=13 best ratio=0.08333
+A4                     |G|= 12 pair=(9,10) n=14 best ratio=0.08333
+A4                     |G|= 12 pair=(9,1) n= 4 best ratio=0.77160
+A4                     |G|= 12 pair=(9,1) n= 5 best ratio=0.50000
+A4                     |G|= 12 pair=(9,1) n= 6 best ratio=0.33333
+A4                     |G|= 12 pair=(9,1) n= 7 best ratio=0.33333
+A4                     |G|= 12 pair=(9,1) n= 8 best ratio=0.33333
+A4                     |G|= 12 pair=(9,1) n= 9 best ratio=0.33333
+A4                     |G|= 12 pair=(9,1) n=10 best ratio=0.33333
+A4                     |G|= 12 pair=(9,1) n=11 best ratio=0.08333
+A4                     |G|= 12 pair=(9,1) n=12 best ratio=0.08333
+A4                     |G|= 12 pair=(9,1) n=13 best ratio=0.08333
+A4                     |G|= 12 pair=(9,1) n=14 best ratio=0.08333
+A5                     |G|= 60 pair=(1,2) n= 4 best ratio=1.00000
+A5                     |G|= 60 pair=(1,2) n= 5 best ratio=0.88074
+A5                     |G|= 60 pair=(1,2) n= 6 best ratio=0.78735
+A5                     |G|= 60 pair=(1,2) n= 7 best ratio=0.68324
+A5                     |G|= 60 pair=(1,2) n= 8 best ratio=0.59289
+A5                     |G|= 60 pair=(1,2) n= 9 best ratio=0.34028
+A5                     |G|= 60 pair=(1,2) n=10 best ratio=0.34028
+A5                     |G|= 60 pair=(1,2) n=11 best ratio=0.34028
+A5                     |G|= 60 pair=(1,2) n=12 best ratio=0.36743
+A5                     |G|= 60 pair=(1,2) n=13 best ratio=0.36743
+A5                     |G|= 60 pair=(1,2) n=14 best ratio=0.36743
+A5                     |G|= 60 pair=(48,45) n= 4 best ratio=1.00000
+A5                     |G|= 60 pair=(48,45) n= 5 best ratio=0.88074
+A5                     |G|= 60 pair=(48,45) n= 6 best ratio=0.78735
+A5                     |G|= 60 pair=(48,45) n= 7 best ratio=0.68324
+A5                     |G|= 60 pair=(48,45) n= 8 best ratio=0.59289
+A5                     |G|= 60 pair=(48,45) n= 9 best ratio=0.34028
+A5                     |G|= 60 pair=(48,45) n=10 best ratio=0.36743
+A5                     |G|= 60 pair=(48,45) n=11 best ratio=0.36743
+A5                     |G|= 60 pair=(48,45) n=12 best ratio=0.36743
+A5                     |G|= 60 pair=(48,45) n=13 best ratio=0.34028
+A5                     |G|= 60 pair=(48,45) n=14 best ratio=0.36743
+A5                     |G|= 60 pair=(40,29) n= 4 best ratio=1.00000
+A5                     |G|= 60 pair=(40,29) n= 5 best ratio=0.88074
+A5                     |G|= 60 pair=(40,29) n= 6 best ratio=0.78735
+A5                     |G|= 60 pair=(40,29) n= 7 best ratio=0.68324
+A5                     |G|= 60 pair=(40,29) n= 8 best ratio=0.59289
+A5                     |G|= 60 pair=(40,29) n= 9 best ratio=0.36743
+A5                     |G|= 60 pair=(40,29) n=10 best ratio=0.36743
+A5                     |G|= 60 pair=(40,29) n=11 best ratio=0.34028
+A5                     |G|= 60 pair=(40,29) n=12 best ratio=0.34028
+A5                     |G|= 60 pair=(40,29) n=13 best ratio=0.34028
+A5                     |G|= 60 pair=(40,29) n=14 best ratio=0.33333
+PSL(2,7)               |G|=168 pair=(115,112) n= 4 best ratio=1.00000
+PSL(2,7)               |G|=168 pair=(115,112) n= 5 best ratio=1.00000
+PSL(2,7)               |G|=168 pair=(115,112) n= 6 best ratio=0.81197
+PSL(2,7)               |G|=168 pair=(115,112) n= 7 best ratio=0.68324
+PSL(2,7)               |G|=168 pair=(115,112) n= 8 best ratio=0.45435
+PSL(2,7)               |G|=168 pair=(115,112) n= 9 best ratio=0.46068
+PSL(2,7)               |G|=168 pair=(115,112) n=10 best ratio=0.36743
+PSL(2,7)               |G|=168 pair=(115,112) n=11 best ratio=0.34028
+PSL(2,7)               |G|=168 pair=(115,112) n=12 best ratio=0.36743
+PSL(2,7)               |G|=168 pair=(115,112) n=13 best ratio=0.36743
+PSL(2,7)               |G|=168 pair=(115,112) n=14 best ratio=0.30864
+PSL(2,7)               |G|=168 pair=(94,161) n= 4 best ratio=1.00000
+PSL(2,7)               |G|=168 pair=(94,161) n= 5 best ratio=0.88074
+PSL(2,7)               |G|=168 pair=(94,161) n= 6 best ratio=0.78735
+PSL(2,7)               |G|=168 pair=(94,161) n= 7 best ratio=0.68324
+PSL(2,7)               |G|=168 pair=(94,161) n= 8 best ratio=0.59289
+PSL(2,7)               |G|=168 pair=(94,161) n= 9 best ratio=0.34028
+PSL(2,7)               |G|=168 pair=(94,161) n=10 best ratio=0.36743
+PSL(2,7)               |G|=168 pair=(94,161) n=11 best ratio=0.36743
+PSL(2,7)               |G|=168 pair=(94,161) n=12 best ratio=0.36743
+PSL(2,7)               |G|=168 pair=(94,161) n=13 best ratio=0.34028
+PSL(2,7)               |G|=168 pair=(94,161) n=14 best ratio=0.33333
+SL(2,3)                |G|= 24 pair=(1,2) n= 4 best ratio=1.00000
+SL(2,3)                |G|= 24 pair=(1,2) n= 5 best ratio=0.75000
+SL(2,3)                |G|= 24 pair=(1,2) n= 6 best ratio=0.56023
+SL(2,3)                |G|= 24 pair=(1,2) n= 7 best ratio=0.34028
+SL(2,3)                |G|= 24 pair=(1,2) n= 8 best ratio=0.34028
+SL(2,3)                |G|= 24 pair=(1,2) n= 9 best ratio=0.34028
+SL(2,3)                |G|= 24 pair=(1,2) n=10 best ratio=0.34028
+SL(2,3)                |G|= 24 pair=(1,2) n=11 best ratio=0.33333
+SL(2,3)                |G|= 24 pair=(1,2) n=12 best ratio=0.34028
+SL(2,3)                |G|= 24 pair=(1,2) n=13 best ratio=0.28583
+SL(2,3)                |G|= 24 pair=(1,2) n=14 best ratio=0.04167
+SL(2,3)                |G|= 24 pair=(19,21) n= 4 best ratio=1.00000
+SL(2,3)                |G|= 24 pair=(19,21) n= 5 best ratio=0.68027
+SL(2,3)                |G|= 24 pair=(19,21) n= 6 best ratio=0.56023
+SL(2,3)                |G|= 24 pair=(19,21) n= 7 best ratio=0.34028
+SL(2,3)                |G|= 24 pair=(19,21) n= 8 best ratio=0.34028
+SL(2,3)                |G|= 24 pair=(19,21) n= 9 best ratio=0.34028
+SL(2,3)                |G|= 24 pair=(19,21) n=10 best ratio=0.34028
+SL(2,3)                |G|= 24 pair=(19,21) n=11 best ratio=0.34028
+SL(2,3)                |G|= 24 pair=(19,21) n=12 best ratio=0.34028
+SL(2,3)                |G|= 24 pair=(19,21) n=13 best ratio=0.33333
+SL(2,3)                |G|= 24 pair=(19,21) n=14 best ratio=0.04167
+SL(2,3)                |G|= 24 pair=(19,1) n= 4 best ratio=1.00000
+SL(2,3)                |G|= 24 pair=(19,1) n= 5 best ratio=0.68027
+SL(2,3)                |G|= 24 pair=(19,1) n= 6 best ratio=0.34028
+SL(2,3)                |G|= 24 pair=(19,1) n= 7 best ratio=0.34028
+SL(2,3)                |G|= 24 pair=(19,1) n= 8 best ratio=0.34028
+SL(2,3)                |G|= 24 pair=(19,1) n= 9 best ratio=0.34028
+SL(2,3)                |G|= 24 pair=(19,1) n=10 best ratio=0.33333
+SL(2,3)                |G|= 24 pair=(19,1) n=11 best ratio=0.33333
+SL(2,3)                |G|= 24 pair=(19,1) n=12 best ratio=0.34028
+SL(2,3)                |G|= 24 pair=(19,1) n=13 best ratio=0.33333
+SL(2,3)                |G|= 24 pair=(19,1) n=14 best ratio=0.04762
+SL(2,5)                |G|=120 pair=(108,89) n= 4 best ratio=1.00000
+SL(2,5)                |G|=120 pair=(108,89) n= 5 best ratio=1.00000
+SL(2,5)                |G|=120 pair=(108,89) n= 6 best ratio=0.85340
+SL(2,5)                |G|=120 pair=(108,89) n= 7 best ratio=0.72410
+SL(2,5)                |G|=120 pair=(108,89) n= 8 best ratio=0.86638
+SL(2,5)                |G|=120 pair=(108,89) n= 9 best ratio=0.76156
+SL(2,5)                |G|=120 pair=(108,89) n=10 best ratio=0.36743
+SL(2,5)                |G|=120 pair=(108,89) n=11 best ratio=0.41921
+SL(2,5)                |G|=120 pair=(108,89) n=12 best ratio=0.35037
+SL(2,5)                |G|=120 pair=(108,89) n=13 best ratio=0.36743
+SL(2,5)                |G|=120 pair=(108,89) n=14 best ratio=0.41921
+SL(2,5)                |G|=120 pair=(114,64) n= 4 best ratio=1.00000
+SL(2,5)                |G|=120 pair=(114,64) n= 5 best ratio=1.00000
+SL(2,5)                |G|=120 pair=(114,64) n= 6 best ratio=0.85340
+SL(2,5)                |G|=120 pair=(114,64) n= 7 best ratio=0.72410
+SL(2,5)                |G|=120 pair=(114,64) n= 8 best ratio=0.86638
+SL(2,5)                |G|=120 pair=(114,64) n= 9 best ratio=0.76156
+SL(2,5)                |G|=120 pair=(114,64) n=10 best ratio=0.66942
+SL(2,5)                |G|=120 pair=(114,64) n=11 best ratio=0.41921
+SL(2,5)                |G|=120 pair=(114,64) n=12 best ratio=0.36743
+SL(2,5)                |G|=120 pair=(114,64) n=13 best ratio=0.41921
+SL(2,5)                |G|=120 pair=(114,64) n=14 best ratio=0.41921
+A4xC3                  |G|= 36 pair=(1,2) n= 4 best ratio=1.00000
+A4xC3                  |G|= 36 pair=(1,2) n= 5 best ratio=0.75000
+A4xC3                  |G|= 36 pair=(1,2) n= 6 best ratio=0.56023
+A4xC3                  |G|= 36 pair=(1,2) n= 7 best ratio=0.45892
+A4xC3                  |G|= 36 pair=(1,2) n= 8 best ratio=0.34028
+A4xC3                  |G|= 36 pair=(1,2) n= 9 best ratio=0.34028
+A4xC3                  |G|= 36 pair=(1,2) n=10 best ratio=0.34028
+A4xC3                  |G|= 36 pair=(1,2) n=11 best ratio=0.34028
+A4xC3                  |G|= 36 pair=(1,2) n=12 best ratio=0.34028
+A4xC3                  |G|= 36 pair=(1,2) n=13 best ratio=0.33333
+A4xC3                  |G|= 36 pair=(1,2) n=14 best ratio=0.14583
+A4xC3                  |G|= 36 pair=(18,2) n= 4 best ratio=1.00000
+A4xC3                  |G|= 36 pair=(18,2) n= 5 best ratio=0.75000
+A4xC3                  |G|= 36 pair=(18,2) n= 6 best ratio=0.56023
+A4xC3                  |G|= 36 pair=(18,2) n= 7 best ratio=0.34028
+A4xC3                  |G|= 36 pair=(18,2) n= 8 best ratio=0.34028
+A4xC3                  |G|= 36 pair=(18,2) n= 9 best ratio=0.33333
+A4xC3                  |G|= 36 pair=(18,2) n=10 best ratio=0.34028
+A4xC3                  |G|= 36 pair=(18,2) n=11 best ratio=0.33333
+A4xC3                  |G|= 36 pair=(18,2) n=12 best ratio=0.34028
+A4xC3                  |G|= 36 pair=(18,2) n=13 best ratio=0.34028
+A4xC3                  |G|= 36 pair=(18,2) n=14 best ratio=0.33333
+A4xC3                  |G|= 36 pair=(11,23) n= 4 best ratio=1.00000
+A4xC3                  |G|= 36 pair=(11,23) n= 5 best ratio=0.75000
+A4xC3                  |G|= 36 pair=(11,23) n= 6 best ratio=0.56023
+A4xC3                  |G|= 36 pair=(11,23) n= 7 best ratio=0.34028
+A4xC3                  |G|= 36 pair=(11,23) n= 8 best ratio=0.34028
+A4xC3                  |G|= 36 pair=(11,23) n= 9 best ratio=0.34028
+A4xC3                  |G|= 36 pair=(11,23) n=10 best ratio=0.34028
+A4xC3                  |G|= 36 pair=(11,23) n=11 best ratio=0.34028
+A4xC3                  |G|= 36 pair=(11,23) n=12 best ratio=0.34028
+A4xC3                  |G|= 36 pair=(11,23) n=13 best ratio=0.34028
+A4xC3                  |G|= 36 pair=(11,23) n=14 best ratio=0.33333

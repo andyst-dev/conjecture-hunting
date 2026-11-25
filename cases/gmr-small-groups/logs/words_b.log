@@ -1,0 +1,231 @@
+C3xSL(2,3)             |G|= 72 pair=(1,2) n= 4 best ratio=1.00000
+C3xSL(2,3)             |G|= 72 pair=(1,2) n= 5 best ratio=1.00000
+C3xSL(2,3)             |G|= 72 pair=(1,2) n= 6 best ratio=0.78735
+C3xSL(2,3)             |G|= 72 pair=(1,2) n= 7 best ratio=0.68324
+C3xSL(2,3)             |G|= 72 pair=(1,2) n= 8 best ratio=0.59289
+C3xSL(2,3)             |G|= 72 pair=(1,2) n= 9 best ratio=0.33333
+C3xSL(2,3)             |G|= 72 pair=(1,2) n=10 best ratio=0.34028
+C3xSL(2,3)             |G|= 72 pair=(1,2) n=11 best ratio=0.36743
+C3xSL(2,3)             |G|= 72 pair=(1,2) n=12 best ratio=0.34028
+C3xSL(2,3)             |G|= 72 pair=(1,2) n=13 best ratio=0.34028
+C3xSL(2,3)             |G|= 72 pair=(1,2) n=14 best ratio=0.33333
+C3xSL(2,3)             |G|= 72 pair=(34,2) n= 4 best ratio=1.00000
+C3xSL(2,3)             |G|= 72 pair=(34,2) n= 5 best ratio=1.00000
+C3xSL(2,3)             |G|= 72 pair=(34,2) n= 6 best ratio=0.78735
+C3xSL(2,3)             |G|= 72 pair=(34,2) n= 7 best ratio=0.68324
+C3xSL(2,3)             |G|= 72 pair=(34,2) n= 8 best ratio=0.34028
+C3xSL(2,3)             |G|= 72 pair=(34,2) n= 9 best ratio=0.34028
+C3xSL(2,3)             |G|= 72 pair=(34,2) n=10 best ratio=0.36743
+C3xSL(2,3)             |G|= 72 pair=(34,2) n=11 best ratio=0.36743
+C3xSL(2,3)             |G|= 72 pair=(34,2) n=12 best ratio=0.36743
+C3xSL(2,3)             |G|= 72 pair=(34,2) n=13 best ratio=0.36743
+C3xSL(2,3)             |G|= 72 pair=(34,2) n=14 best ratio=0.34028
+C3xSL(2,3)             |G|= 72 pair=(20,62) n= 4 best ratio=1.00000
+C3xSL(2,3)             |G|= 72 pair=(20,62) n= 5 best ratio=1.00000
+C3xSL(2,3)             |G|= 72 pair=(20,62) n= 6 best ratio=0.78735
+C3xSL(2,3)             |G|= 72 pair=(20,62) n= 7 best ratio=0.68324
+C3xSL(2,3)             |G|= 72 pair=(20,62) n= 8 best ratio=0.34028
+C3xSL(2,3)             |G|= 72 pair=(20,62) n= 9 best ratio=0.36743
+C3xSL(2,3)             |G|= 72 pair=(20,62) n=10 best ratio=0.34028
+C3xSL(2,3)             |G|= 72 pair=(20,62) n=11 best ratio=0.33333
+C3xSL(2,3)             |G|= 72 pair=(20,62) n=12 best ratio=0.34028
+C3xSL(2,3)             |G|= 72 pair=(20,62) n=13 best ratio=0.36743
+C3xSL(2,3)             |G|= 72 pair=(20,62) n=14 best ratio=0.33333
+C3wrC3                 |G|= 81 pair=(1,2) n= 4 best ratio=1.00000
+C3wrC3                 |G|= 81 pair=(1,2) n= 5 best ratio=0.88074
+C3wrC3                 |G|= 81 pair=(1,2) n= 6 best ratio=0.78735
+C3wrC3                 |G|= 81 pair=(1,2) n= 7 best ratio=0.68324
+C3wrC3                 |G|= 81 pair=(1,2) n= 8 best ratio=0.34477
+C3wrC3                 |G|= 81 pair=(1,2) n= 9 best ratio=0.34028
+C3wrC3                 |G|= 81 pair=(1,2) n=10 best ratio=0.34028
+C3wrC3                 |G|= 81 pair=(1,2) n=11 best ratio=0.36743
+C3wrC3                 |G|= 81 pair=(1,2) n=12 best ratio=0.36743
+C3wrC3                 |G|= 81 pair=(1,2) n=13 best ratio=0.36743
+C3wrC3                 |G|= 81 pair=(1,2) n=14 best ratio=0.34028
+C3wrC3                 |G|= 81 pair=(61,24) n= 4 best ratio=1.00000
+C3wrC3                 |G|= 81 pair=(61,24) n= 5 best ratio=0.88074
+C3wrC3                 |G|= 81 pair=(61,24) n= 6 best ratio=0.78735
+C3wrC3                 |G|= 81 pair=(61,24) n= 7 best ratio=0.68324
+C3wrC3                 |G|= 81 pair=(61,24) n= 8 best ratio=0.59289
+C3wrC3                 |G|= 81 pair=(61,24) n= 9 best ratio=0.42321
+C3wrC3                 |G|= 81 pair=(61,24) n=10 best ratio=0.36743
+C3wrC3                 |G|= 81 pair=(61,24) n=11 best ratio=0.36743
+C3wrC3                 |G|= 81 pair=(61,24) n=12 best ratio=0.33333
+C3wrC3                 |G|= 81 pair=(61,24) n=13 best ratio=0.34028
+C3wrC3                 |G|= 81 pair=(61,24) n=14 best ratio=0.34028
+C3wrC3                 |G|= 81 pair=(34,24) n= 4 best ratio=1.00000
+C3wrC3                 |G|= 81 pair=(34,24) n= 5 best ratio=0.88074
+C3wrC3                 |G|= 81 pair=(34,24) n= 6 best ratio=0.78735
+C3wrC3                 |G|= 81 pair=(34,24) n= 7 best ratio=0.68324
+C3wrC3                 |G|= 81 pair=(34,24) n= 8 best ratio=0.59289
+C3wrC3                 |G|= 81 pair=(34,24) n= 9 best ratio=0.42321
+C3wrC3                 |G|= 81 pair=(34,24) n=10 best ratio=0.34028
+C3wrC3                 |G|= 81 pair=(34,24) n=11 best ratio=0.36743
+C3wrC3                 |G|= 81 pair=(34,24) n=12 best ratio=0.34028
+C3wrC3                 |G|= 81 pair=(34,24) n=13 best ratio=0.34028
+C3wrC3                 |G|= 81 pair=(34,24) n=14 best ratio=0.34028
+SG243/<z1> (81)        |G|= 81 pair=(1,2) n= 4 best ratio=1.00000
+SG243/<z1> (81)        |G|= 81 pair=(1,2) n= 5 best ratio=0.77248
+SG243/<z1> (81)        |G|= 81 pair=(1,2) n= 6 best ratio=0.57392
+SG243/<z1> (81)        |G|= 81 pair=(1,2) n= 7 best ratio=0.52288
+SG243/<z1> (81)        |G|= 81 pair=(1,2) n= 8 best ratio=0.34028
+SG243/<z1> (81)        |G|= 81 pair=(1,2) n= 9 best ratio=0.38427
+SG243/<z1> (81)        |G|= 81 pair=(1,2) n=10 best ratio=0.34028
+SG243/<z1> (81)        |G|= 81 pair=(1,2) n=11 best ratio=0.34028
+SG243/<z1> (81)        |G|= 81 pair=(1,2) n=12 best ratio=0.34028
+SG243/<z1> (81)        |G|= 81 pair=(1,2) n=13 best ratio=0.34028
+SG243/<z1> (81)        |G|= 81 pair=(1,2) n=14 best ratio=0.34028
+SG243/<z1> (81)        |G|= 81 pair=(61,69) n= 4 best ratio=1.00000
+SG243/<z1> (81)        |G|= 81 pair=(61,69) n= 5 best ratio=0.77248
+SG243/<z1> (81)        |G|= 81 pair=(61,69) n= 6 best ratio=0.56023
+SG243/<z1> (81)        |G|= 81 pair=(61,69) n= 7 best ratio=0.52288
+SG243/<z1> (81)        |G|= 81 pair=(61,69) n= 8 best ratio=0.37995
+SG243/<z1> (81)        |G|= 81 pair=(61,69) n= 9 best ratio=0.34028
+SG243/<z1> (81)        |G|= 81 pair=(61,69) n=10 best ratio=0.34028
+SG243/<z1> (81)        |G|= 81 pair=(61,69) n=11 best ratio=0.34028
+SG243/<z1> (81)        |G|= 81 pair=(61,69) n=12 best ratio=0.33333
+SG243/<z1> (81)        |G|= 81 pair=(61,69) n=13 best ratio=0.34028
+SG243/<z1> (81)        |G|= 81 pair=(61,69) n=14 best ratio=0.34028
+SG243/<z1> (81)        |G|= 81 pair=(23,80) n= 4 best ratio=1.00000
+SG243/<z1> (81)        |G|= 81 pair=(23,80) n= 5 best ratio=0.77248
+SG243/<z1> (81)        |G|= 81 pair=(23,80) n= 6 best ratio=0.56023
+SG243/<z1> (81)        |G|= 81 pair=(23,80) n= 7 best ratio=0.52288
+SG243/<z1> (81)        |G|= 81 pair=(23,80) n= 8 best ratio=0.42893
+SG243/<z1> (81)        |G|= 81 pair=(23,80) n= 9 best ratio=0.34028
+SG243/<z1> (81)        |G|= 81 pair=(23,80) n=10 best ratio=0.33333
+SG243/<z1> (81)        |G|= 81 pair=(23,80) n=11 best ratio=0.34028
+SG243/<z1> (81)        |G|= 81 pair=(23,80) n=12 best ratio=0.34028
+SG243/<z1> (81)        |G|= 81 pair=(23,80) n=13 best ratio=0.34028
+SG243/<z1> (81)        |G|= 81 pair=(23,80) n=14 best ratio=0.34028
+SG243/<z2> (81)        |G|= 81 pair=(1,2) n= 4 best ratio=1.00000
+SG243/<z2> (81)        |G|= 81 pair=(1,2) n= 5 best ratio=0.77248
+SG243/<z2> (81)        |G|= 81 pair=(1,2) n= 6 best ratio=0.57392
+SG243/<z2> (81)        |G|= 81 pair=(1,2) n= 7 best ratio=0.52288
+SG243/<z2> (81)        |G|= 81 pair=(1,2) n= 8 best ratio=0.39857
+SG243/<z2> (81)        |G|= 81 pair=(1,2) n= 9 best ratio=0.34028
+SG243/<z2> (81)        |G|= 81 pair=(1,2) n=10 best ratio=0.34028
+SG243/<z2> (81)        |G|= 81 pair=(1,2) n=11 best ratio=0.34028
+SG243/<z2> (81)        |G|= 81 pair=(1,2) n=12 best ratio=0.34028
+SG243/<z2> (81)        |G|= 81 pair=(1,2) n=13 best ratio=0.33333
+SG243/<z2> (81)        |G|= 81 pair=(1,2) n=14 best ratio=0.34028
+SG243/<z2> (81)        |G|= 81 pair=(60,72) n= 4 best ratio=1.00000
+SG243/<z2> (81)        |G|= 81 pair=(60,72) n= 5 best ratio=0.77248
+SG243/<z2> (81)        |G|= 81 pair=(60,72) n= 6 best ratio=0.56250
+SG243/<z2> (81)        |G|= 81 pair=(60,72) n= 7 best ratio=0.52288
+SG243/<z2> (81)        |G|= 81 pair=(60,72) n= 8 best ratio=0.42893
+SG243/<z2> (81)        |G|= 81 pair=(60,72) n= 9 best ratio=0.34028
+SG243/<z2> (81)        |G|= 81 pair=(60,72) n=10 best ratio=0.34028
+SG243/<z2> (81)        |G|= 81 pair=(60,72) n=11 best ratio=0.33333
+SG243/<z2> (81)        |G|= 81 pair=(60,72) n=12 best ratio=0.34028
+SG243/<z2> (81)        |G|= 81 pair=(60,72) n=13 best ratio=0.34028
+SG243/<z2> (81)        |G|= 81 pair=(60,72) n=14 best ratio=0.34028
+SG243/<z2> (81)        |G|= 81 pair=(35,3) n= 4 best ratio=1.00000
+SG243/<z2> (81)        |G|= 81 pair=(35,3) n= 5 best ratio=0.77248
+SG243/<z2> (81)        |G|= 81 pair=(35,3) n= 6 best ratio=0.56250
+SG243/<z2> (81)        |G|= 81 pair=(35,3) n= 7 best ratio=0.45892
+SG243/<z2> (81)        |G|= 81 pair=(35,3) n= 8 best ratio=0.46492
+SG243/<z2> (81)        |G|= 81 pair=(35,3) n= 9 best ratio=0.34028
+SG243/<z2> (81)        |G|= 81 pair=(35,3) n=10 best ratio=0.34028
+SG243/<z2> (81)        |G|= 81 pair=(35,3) n=11 best ratio=0.34028
+SG243/<z2> (81)        |G|= 81 pair=(35,3) n=12 best ratio=0.34028
+SG243/<z2> (81)        |G|= 81 pair=(35,3) n=13 best ratio=0.33333
+SG243/<z2> (81)        |G|= 81 pair=(35,3) n=14 best ratio=0.34028
+SG243/<z3> (81)        |G|= 81 pair=(1,2) n= 4 best ratio=1.00000
+SG243/<z3> (81)        |G|= 81 pair=(1,2) n= 5 best ratio=0.88074
+SG243/<z3> (81)        |G|= 81 pair=(1,2) n= 6 best ratio=0.78735
+SG243/<z3> (81)        |G|= 81 pair=(1,2) n= 7 best ratio=0.68324
+SG243/<z3> (81)        |G|= 81 pair=(1,2) n= 8 best ratio=0.46258
+SG243/<z3> (81)        |G|= 81 pair=(1,2) n= 9 best ratio=0.42321
+SG243/<z3> (81)        |G|= 81 pair=(1,2) n=10 best ratio=0.34028
+SG243/<z3> (81)        |G|= 81 pair=(1,2) n=11 best ratio=0.34028
+SG243/<z3> (81)        |G|= 81 pair=(1,2) n=12 best ratio=0.36743
+SG243/<z3> (81)        |G|= 81 pair=(1,2) n=13 best ratio=0.34028
+SG243/<z3> (81)        |G|= 81 pair=(1,2) n=14 best ratio=0.34028
+SG243/<z3> (81)        |G|= 81 pair=(61,24) n= 4 best ratio=1.00000
+SG243/<z3> (81)        |G|= 81 pair=(61,24) n= 5 best ratio=0.88074
+SG243/<z3> (81)        |G|= 81 pair=(61,24) n= 6 best ratio=0.78735
+SG243/<z3> (81)        |G|= 81 pair=(61,24) n= 7 best ratio=0.68324
+SG243/<z3> (81)        |G|= 81 pair=(61,24) n= 8 best ratio=0.59289
+SG243/<z3> (81)        |G|= 81 pair=(61,24) n= 9 best ratio=0.34028
+SG243/<z3> (81)        |G|= 81 pair=(61,24) n=10 best ratio=0.33333
+SG243/<z3> (81)        |G|= 81 pair=(61,24) n=11 best ratio=0.34028
+SG243/<z3> (81)        |G|= 81 pair=(61,24) n=12 best ratio=0.33333
+SG243/<z3> (81)        |G|= 81 pair=(61,24) n=13 best ratio=0.34028
+SG243/<z3> (81)        |G|= 81 pair=(61,24) n=14 best ratio=0.33333
+SG243/<z3> (81)        |G|= 81 pair=(34,24) n= 4 best ratio=1.00000
+SG243/<z3> (81)        |G|= 81 pair=(34,24) n= 5 best ratio=0.77248
+SG243/<z3> (81)        |G|= 81 pair=(34,24) n= 6 best ratio=0.67633
+SG243/<z3> (81)        |G|= 81 pair=(34,24) n= 7 best ratio=0.68324
+SG243/<z3> (81)        |G|= 81 pair=(34,24) n= 8 best ratio=0.36743
+SG243/<z3> (81)        |G|= 81 pair=(34,24) n= 9 best ratio=0.34028
+SG243/<z3> (81)        |G|= 81 pair=(34,24) n=10 best ratio=0.36743
+SG243/<z3> (81)        |G|= 81 pair=(34,24) n=11 best ratio=0.34028
+SG243/<z3> (81)        |G|= 81 pair=(34,24) n=12 best ratio=0.34028
+SG243/<z3> (81)        |G|= 81 pair=(34,24) n=13 best ratio=0.34028
+SG243/<z3> (81)        |G|= 81 pair=(34,24) n=14 best ratio=0.36743
+SG243/<z4> (81)        |G|= 81 pair=(1,2) n= 4 best ratio=1.00000
+SG243/<z4> (81)        |G|= 81 pair=(1,2) n= 5 best ratio=0.88074
+SG243/<z4> (81)        |G|= 81 pair=(1,2) n= 6 best ratio=0.78735
+SG243/<z4> (81)        |G|= 81 pair=(1,2) n= 7 best ratio=0.68324
+SG243/<z4> (81)        |G|= 81 pair=(1,2) n= 8 best ratio=0.59289
+SG243/<z4> (81)        |G|= 81 pair=(1,2) n= 9 best ratio=0.34028
+SG243/<z4> (81)        |G|= 81 pair=(1,2) n=10 best ratio=0.36743
+SG243/<z4> (81)        |G|= 81 pair=(1,2) n=11 best ratio=0.36743
+SG243/<z4> (81)        |G|= 81 pair=(1,2) n=12 best ratio=0.34028
+SG243/<z4> (81)        |G|= 81 pair=(1,2) n=13 best ratio=0.33333
+SG243/<z4> (81)        |G|= 81 pair=(1,2) n=14 best ratio=0.34028
+SG243/<z4> (81)        |G|= 81 pair=(58,57) n= 4 best ratio=1.00000
+SG243/<z4> (81)        |G|= 81 pair=(58,57) n= 5 best ratio=0.77248
+SG243/<z4> (81)        |G|= 81 pair=(58,57) n= 6 best ratio=0.78735
+SG243/<z4> (81)        |G|= 81 pair=(58,57) n= 7 best ratio=0.68324
+SG243/<z4> (81)        |G|= 81 pair=(58,57) n= 8 best ratio=0.34028
+SG243/<z4> (81)        |G|= 81 pair=(58,57) n= 9 best ratio=0.34028
+SG243/<z4> (81)        |G|= 81 pair=(58,57) n=10 best ratio=0.34028
+SG243/<z4> (81)        |G|= 81 pair=(58,57) n=11 best ratio=0.34028
+SG243/<z4> (81)        |G|= 81 pair=(58,57) n=12 best ratio=0.33333
+SG243/<z4> (81)        |G|= 81 pair=(58,57) n=13 best ratio=0.36743
+SG243/<z4> (81)        |G|= 81 pair=(58,57) n=14 best ratio=0.36743
+SG243/<z4> (81)        |G|= 81 pair=(34,24) n= 4 best ratio=1.00000
+SG243/<z4> (81)        |G|= 81 pair=(34,24) n= 5 best ratio=0.88074
+SG243/<z4> (81)        |G|= 81 pair=(34,24) n= 6 best ratio=0.78735
+SG243/<z4> (81)        |G|= 81 pair=(34,24) n= 7 best ratio=0.68324
+SG243/<z4> (81)        |G|= 81 pair=(34,24) n= 8 best ratio=0.59289
+SG243/<z4> (81)        |G|= 81 pair=(34,24) n= 9 best ratio=0.34028
+SG243/<z4> (81)        |G|= 81 pair=(34,24) n=10 best ratio=0.34028
+SG243/<z4> (81)        |G|= 81 pair=(34,24) n=11 best ratio=0.33333
+SG243/<z4> (81)        |G|= 81 pair=(34,24) n=12 best ratio=0.34028
+SG243/<z4> (81)        |G|= 81 pair=(34,24) n=13 best ratio=0.34028
+SG243/<z4> (81)        |G|= 81 pair=(34,24) n=14 best ratio=0.36743
+SG243/Z (order 27)     |G|= 27 pair=(1,2) n= 4 best ratio=0.87500
+SG243/Z (order 27)     |G|= 27 pair=(1,2) n= 5 best ratio=0.66694
+SG243/Z (order 27)     |G|= 27 pair=(1,2) n= 6 best ratio=0.56023
+SG243/Z (order 27)     |G|= 27 pair=(1,2) n= 7 best ratio=0.34028
+SG243/Z (order 27)     |G|= 27 pair=(1,2) n= 8 best ratio=0.34028
+SG243/Z (order 27)     |G|= 27 pair=(1,2) n= 9 best ratio=0.34028
+SG243/Z (order 27)     |G|= 27 pair=(1,2) n=10 best ratio=0.34028
+SG243/Z (order 27)     |G|= 27 pair=(1,2) n=11 best ratio=0.34028
+SG243/Z (order 27)     |G|= 27 pair=(1,2) n=12 best ratio=0.33333
+SG243/Z (order 27)     |G|= 27 pair=(1,2) n=13 best ratio=0.03704
+SG243/Z (order 27)     |G|= 27 pair=(1,2) n=14 best ratio=0.34028
+SG243/Z (order 27)     |G|= 27 pair=(14,2) n= 4 best ratio=0.87500
+SG243/Z (order 27)     |G|= 27 pair=(14,2) n= 5 best ratio=0.66694
+SG243/Z (order 27)     |G|= 27 pair=(14,2) n= 6 best ratio=0.56023
+SG243/Z (order 27)     |G|= 27 pair=(14,2) n= 7 best ratio=0.34028
+SG243/Z (order 27)     |G|= 27 pair=(14,2) n= 8 best ratio=0.34028
+SG243/Z (order 27)     |G|= 27 pair=(14,2) n= 9 best ratio=0.34028
+SG243/Z (order 27)     |G|= 27 pair=(14,2) n=10 best ratio=0.33333
+SG243/Z (order 27)     |G|= 27 pair=(14,2) n=11 best ratio=0.34028
+SG243/Z (order 27)     |G|= 27 pair=(14,2) n=12 best ratio=0.34028
+SG243/Z (order 27)     |G|= 27 pair=(14,2) n=13 best ratio=0.33333
+SG243/Z (order 27)     |G|= 27 pair=(14,2) n=14 best ratio=0.03704
+SG243/Z (order 27)     |G|= 27 pair=(9,17) n= 4 best ratio=0.87500
+SG243/Z (order 27)     |G|= 27 pair=(9,17) n= 5 best ratio=0.66694
+SG243/Z (order 27)     |G|= 27 pair=(9,17) n= 6 best ratio=0.56023
+SG243/Z (order 27)     |G|= 27 pair=(9,17) n= 7 best ratio=0.34028
+SG243/Z (order 27)     |G|= 27 pair=(9,17) n= 8 best ratio=0.33333
+SG243/Z (order 27)     |G|= 27 pair=(9,17) n= 9 best ratio=0.34028
+SG243/Z (order 27)     |G|= 27 pair=(9,17) n=10 best ratio=0.34028
+SG243/Z (order 27)     |G|= 27 pair=(9,17) n=11 best ratio=0.34028
+SG243/Z (order 27)     |G|= 27 pair=(9,17) n=12 best ratio=0.34028
+SG243/Z (order 27)     |G|= 27 pair=(9,17) n=13 best ratio=0.33333
+SG243/Z (order 27)     |G|= 27 pair=(9,17) n=14 best ratio=0.04167
