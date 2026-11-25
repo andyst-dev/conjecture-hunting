@@ -1,6 +1,6 @@
 # Benedetti–Menara, Conjecture 7.1 (arXiv:2611.08071 v1)
 
-**Status:** proved for every m ≤ 8 (all r), by SAT (UNSAT certificates); the general case is open
+**Status:** proved for every m ≤ 8 (all r) by SAT, and for **r = 2 up to m = 12** (exhaustive over triangle-free graphs); the general case is open
 **Date:** 2026-11-25 · **Tools:** PySAT (CaDiCaL 1.5.3) · **AI-assisted (Claude), unrefereed**
 
 ## Statement
@@ -36,8 +36,26 @@ SAT(m, r, L) asks whether a flag 1-layered family of r-subsets of [m] with exact
 
 r = 2, m = 9 did not finish within 5 minutes. Symmetry breaking is minimal (one clause).
 
+## r = 2: graph-by-graph search (`r2_graphs.py`)
+For r = 2, a flag 1-layered family is a triangle-free graph G with a surjective edge labelling in which every vertex sees an interval of labels. A counterexample needs m labels.
+
+**Reductions.**
+- G may be taken connected: each component's labels form an interval, so by induction a disconnected G has at most m − c labels.
+- G needs ≥ m edges, so trees are excluded.
+
+**Path bound.** The labels at v span at most deg(v) − 1. Summing deg − 1 along line-graph walks between two edges bounds their label difference. Graphs whose bound is ≤ m − 2 are skipped; every other graph gets an exact SAT check for m labels.
+
+**Validation (`test_r2.py`).** For every connected triangle-free graph with m ≤ 8, the exact maximum (by SAT) never exceeds the path bound + 1. Its maximum over graphs is exactly m − 1, matching the global SAT results.
+
+| m | graphs (connected, triangle-free, ≥ m edges) | pruned by bound | exact SAT checks | counterexamples |
+|---|---|---|---|---|
+| 9 | 1,333 | 1,158 | 175 | 0 |
+| 10 | 9,726 | 8,640 | 1,086 | 0 |
+| 11 | 90,607 | 83,367 | 7,240 | 0 |
+| 12 | 1,143,510 (= 1,144,061 connected triangle-free − 551 trees) | 1,086,963 | 56,547 | 0 |
+
 ## Open leads
-- Stronger symmetry breaking (lex-leader on vertex permutations, layer reversal) or a dedicated r = 2 search over triangle-free graphs (geng -t) with a small exact solver per graph should reach m = 10–12.
+- r = 2, m = 13 (about 19M graphs) needs a C port of the path bound. Stronger symmetry breaking in `sat.py` would push r ≥ 3 past m = 8.
 - For r = 2 the problem is purely about graphs: edge labellings of a triangle-free graph in which every vertex sees an interval of labels. Maximise the number of labels; the conjecture says it is at most m − 1.
 
 ## Files

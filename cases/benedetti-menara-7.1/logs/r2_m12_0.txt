@@ -1,0 +1,1 @@
+m=12: graphs=494041 pruned_by_bound=472494 sat_checked=21547
