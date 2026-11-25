@@ -22,6 +22,11 @@ Z_M is real-rooted ⇔ **4·a2 ≤ W3² + 8** (the γ-polynomial 1 + (W3 − 4)x
 
 The coalescence families of arXiv:2610.17135 (M_q, G_{4,q}) do **not** threaten rank-4 Z. Their auxiliary points create about q⁸ three-point hyperplanes, so W3² dwarfs a2.
 
+## General implementation (`zpoly.py`, `search_z.py`)
+- KL polynomials of every interval of the lattice of flats come from the EPW identity; each one is checked against t^r P(1/t) − P(t) = R(t). Z follows from them, and real-rootedness is tested **exactly** with sympy root counting.
+- `test_zpoly.py` checks it against known values: P(U_{3,4}) = 1 + 2t, P(M(K₄)) = 1 + t, P(M(K₅)) = 1 + 5t, palindromic Z, the rank-4 closed form, and Z(A ⊕ B) = Z(A)Z(B).
+- `search_z.py` hill-climbs over **connected** linear matroids (direct sums are excluded, since they factor and give trivial double roots), minimising the γ-root gap. Short smoke runs (2 min) in rank 5 over GF(2) and GF(3) stay far from violation, with a best margin of about 0.86. Long runs are meant for a local machine (`RUN.md`).
+
 ## Leads
 - Prove 4a2 ≤ W3² + 8 for all rank-4 matroids. That would settle rank 4 and explain why equality comes from U_{2,3} ⊕ U_{2,3}.
 - A counterexample, if any, is in rank ≥ 5, where the KL coefficients of contractions enter.
