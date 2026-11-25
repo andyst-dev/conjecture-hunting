@@ -11,6 +11,7 @@ All work here is **AI-assisted and unrefereed**. The protocol every case follows
 | Case | Source | Status |
 |---|---|---|
 | [Khan–Haidar, Conj. 7.6](cases/khan-haidar-7.6/CASE.md) | arXiv:2611.21670 | No counterexample in the classes searched; 2 resistance-regular graphs not among the paper's listed examples |
+| [Notik, Singer rulers and chambers (§7)](cases/notik-singer-golomb/CASE.md) | arXiv:2611.22656 | Verified for m ≤ 113 and m = 121 (paper: m ≤ 103); chain reduction of the chamber LP |
 
 ## Layout
 ```
