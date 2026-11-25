@@ -59,5 +59,6 @@ Runs for m = 125, 127, 128 and 131 were started and then stopped. At this size e
 - `singer.py`: Singer difference sets for any prime power, via GF(m) tables and a primitive cubic over GF(m)
 - `chamber.py`: chain reduction, exact certificates and the exact better point
 - `run.py`: driver (`python3 run.py 2 17 --allcuts`, or `python3 run.py 0 0 --list 107,109 --mirror`)
+- `test_chain.py`: chain reduction vs the full chamber (all of R_n), 150 random rulers + all cuts for m = 3, 4, 5, agreement to about 1e-15
 - `verify_certificates.py`: independent checker in Python `Fraction`s; re-checks the perfect difference set property and every certificate condition exactly (`python3 verify_certificates.py 107`)
 - `data/`, `logs/`: outputs
