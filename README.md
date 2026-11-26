@@ -17,6 +17,8 @@ All work here is **AI-assisted and unrefereed**. The protocol every case follows
 | [Z-polynomial, rank 4 (exploratory)](cases/z-polynomial-rank4/CASE.md) | PXY18 Conj. 5.1 | Closed-form rank-4 criterion; random linear matroids stay below the threshold (equality only for U_{2,3}⊕U_{2,3}) |
 | [GMR inequality in small groups](cases/gmr-small-groups/CASE.md) | arXiv:2611.12776 (Q9.4) | No counterexample of order < 243 in the families searched (heuristic, calibrated on the paper's 243 witness) |
 | [Notik, Singer rulers and chambers (§7)](cases/notik-singer-golomb/CASE.md) | arXiv:2611.22656 | Verified for m ≤ 113 and m = 121 (paper: m ≤ 103); chain reduction of the chamber LP |
+| [Leake–Mohammadi Yekta, Question 1.7](cases/leake-yekta-q1.7/CASE.md) | arXiv:2609.39917 | No violation of the weighted log-concavity question on 3,471 small unimodular configurations (rank 2–5) and contingency tables up to 3×4 (float screen) |
+| [Cherukupally, Conj. 3.4](cases/cherukupally-a-n/CASE.md) | arXiv:2603.17434 | No n with \|A(n)\| ≥ 4 up to 10^27, exhaustive (abstract: n < 10^15) |
 
 ## Layout
 ```

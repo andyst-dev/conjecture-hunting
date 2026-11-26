@@ -1,0 +1,6 @@
+2 2 20 {'domain': 3311, 'maxgap': np.float64(1.4832579608992091e-13), 'exact_hits': 0}
+2 3 9 {'domain': 1705, 'maxgap': np.float64(6.661338147750939e-15), 'exact_hits': 0}
+2 4 6 {'domain': 1218, 'maxgap': np.float64(3.597122599785507e-14), 'exact_hits': 0}
+3 3 5 {'domain': 812, 'maxgap': np.float64(6.439293542825908e-15), 'exact_hits': 0}
+2 5 5 {'domain': 1302, 'maxgap': np.float64(2.6645352591003757e-15), 'exact_hits': 0}
+3 4 4 {'domain': 798, 'maxgap': np.float64(-0.0), 'exact_hits': 0}
