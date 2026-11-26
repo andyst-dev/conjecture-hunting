@@ -1,7 +1,7 @@
 # Proudfoot–Xu–Young, real-rootedness of the matroid Z-polynomial: rank 4 (exploratory)
 
-**Status:** exploratory. No counterexample; a closed-form criterion for rank 4.
-**Date:** 2026-11-25 · **AI-assisted (Claude), unrefereed**
+**Status:** exploratory. No counterexample; a closed-form criterion for rank 4; random rank-5 search over GF(2)/GF(3) (90 min each) found nothing.
+**Date:** 2026-11-25, long run 2026-11-26 · **AI-assisted (Claude), unrefereed**
 
 ## Why this target
 It is a "domino" candidate. Real-rootedness for Chow, augmented Chow and chain polynomials (arXiv:2610.17135) and for dual Chow (Davis, Nov 2026) has been disproved, and Kazhdan–Lusztig polynomials of matroids need not be unimodal (arXiv:2607.24186). Real-rootedness of Z_M (PXY18, Conj. 5.1) is still open; it is proved for sparse paving matroids (arXiv:2609.07636).
@@ -26,6 +26,19 @@ The coalescence families of arXiv:2610.17135 (M_q, G_{4,q}) do **not** threaten 
 - KL polynomials of every interval of the lattice of flats come from the EPW identity; each one is checked against t^r P(1/t) − P(t) = R(t). Z follows from them, and real-rootedness is tested **exactly** with sympy root counting.
 - `test_zpoly.py` checks it against known values: P(U_{3,4}) = 1 + 2t, P(M(K₄)) = 1 + t, P(M(K₅)) = 1 + 5t, palindromic Z, the rank-4 closed form, and Z(A ⊕ B) = Z(A)Z(B).
 - `search_z.py` hill-climbs over **connected** linear matroids (direct sums are excluded, since they factor and give trivial double roots), minimising the γ-root gap. Short smoke runs (2 min) in rank 5 over GF(2) and GF(3) stay far from violation, with a best margin of about 0.86. Long runs are meant for a local machine (`RUN.md`).
+
+## Long run, rank 5 (2026-11-26)
+Two 90-minute runs, one per field, on a local Mac:
+
+| Run | Command | Evaluations | Restarts logged | Best γ-root margin (min / median / max over restarts) | n range |
+|---|---|---|---|---|---|
+| GF(2) | `search_z.py --rank 5 --p 2 --maxn 16 --minutes 90 --seed 1` | 39,969 | 199 | 0.842 / 0.861 / 0.878 | 6–16 |
+| GF(3) | `search_z.py --rank 5 --p 3 --maxn 14 --minutes 90 --seed 2` | 111,877 | 557 | 0.873 / 0.873 / 0.942 | 6–14 |
+
+- **No candidate.** No evaluation had a negative margin (γ-polynomial non-real-rooted in floating point), so `data/z_candidates.jsonl` was never created. The margin is min gap / max |root| of the γ-roots, computed with numpy. It is a floating-point **screen**, not a proof for the matroids searched.
+- The best Z found are Z = 1 + 22t + 95t² + 95t³ + 22t⁴ + t⁵ (GF(2), n = 13) and Z = 1 + 15t + 50t² + 50t³ + 15t⁴ + t⁵ (GF(3), n = 9). Both have 5 real roots by an **exact** sympy root count, and both factor as (1 + t)·(quartic). The vectors are in `data/run_r5_p*.log`.
+- The margin never fell below about 0.84, the same as the 2-minute smoke runs. On GF(3) the median equals the minimum: the hill-climb keeps returning to the same optimum (Z = 1 + 15t + 50t² + …). The objective does not seem to push towards violation, so a different objective or move set would be needed for a more useful search.
+- Coverage is random, not exhaustive: 756 restarts appended to `data/z_search.jsonl` (lines 76–831).
 
 ## Leads
 - Prove 4a2 ≤ W3² + 8 for all rank-4 matroids. That would settle rank 4 and explain why equality comes from U_{2,3} ⊕ U_{2,3}.
