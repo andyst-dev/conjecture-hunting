@@ -1,0 +1,2 @@
+n=18 input=339557 mtf=339557 complete_bipartite=1 checked=339556 counterexamples=0
+size of first CDM found: |M|=2:22749 |M|=3:14019 |M|=4:17504 |M|=5:25757 |M|=6:33367 |M|=7:44198 |M|=8:36165 |M|=9:145797

@@ -1,7 +1,7 @@
 # Costa–Luu–Wood–Yip, Conjecture CDM (arXiv:2512.17114 v2, Conjecture 1.12 / 10)
 
-**Status:** no counterexample on up to 17 vertices (exhaustive; the paper verified up to 11)
-**Date:** 2026-11-25 · **Tools:** C, nauty `geng` 2.8.8 with a custom PRUNE hook, Python/networkx for cross-checks · **AI-assisted (Claude), unrefereed**
+**Status:** no counterexample up to 18 vertices (exhaustive; the paper verified up to 11)
+**Date:** 2026-11-25, n = 18 on 2026-11-26 · **Tools:** C, nauty `geng` 2.8.8 with a custom PRUNE hook, Python/networkx for cross-checks · **AI-assisted (Claude), unrefereed**
 
 ## Statement
 Source: J. Costa, E. Luu, D. R. Wood and J. H. Yip, *Verifying Hadwiger's Conjecture for Examples of Graphs with α(G) = 2*, arXiv:2512.17114.
@@ -47,19 +47,21 @@ Cross-checks in `test_cdm.py`, all passing:
 | 15 | 5,036 | 5,029 | 0 |
 | 16 | 25,617 | 25,609 | 0 |
 | 17 | 164,796 (= A216783; split 0/2 + 1/2 = 72,588 + 92,208) | 164,788 | 0 |
+| 18 | 1,337,848 (= A216783; split i/4 = 329,189 + 331,675 + 337,427 + 339,557) | 1,337,839 | 0 |
 
 The coverage is exhaustive for each n listed (all graphs on n vertices).
 
 ## Findings
-- CDM holds for **all** graphs on at most **17** vertices; the paper's range was 11.
+- CDM holds for **all** graphs on at most **18** vertices; the paper's range was 11.
+- n = 18: the sizes of the first CDM found are |M| = 2…9: 87,055 / 57,999 / 71,602 / 96,397 / 124,328 / 161,642 / 137,359 / 601,457. These sum to 1,337,839, the number checked. The 9 excluded graphs are exactly K_{a,b}, a = 1…9.
 - The size of the first CDM found grows with n. For example, at n = 12, 49 of the 141 graphs first yield a perfect matching. Small CDMs are not always available, so this is not a trivial case.
 
 ## Open leads
-- n = 17 took about 37 min on 2 cores (generation dominates). n = 18 (1,337,848 MTF graphs) should take on the order of 10 CPU-hours with `res/mod` splitting. n = 19 (13.7M) needs about a day.
+- n = 17 took about 37 min on 2 cores (generation dominates). n = 18 took about 5 h 25 min wall on 4 cores (`./geng_mtf -tcq 18 i/4 | ./cdm`, i = 0..3), about 22 CPU-hours. That is twice the earlier estimate: the cost grew about 18× from n = 17. At the same ratio, n = 19 (13.7M MTF graphs) would need about 400 CPU-hours (about 2 days on 10 cores), so the dedicated generator below is the better route.
 - A dedicated MTF generator (Brandt–Brinkmann–Harmuth) would reach n = 20–23.
 
 ## Files
 - `cdm.c`: CDM checker; `--raw` prints has_cdm for every input (test mode)
 - `mtfprune.c`: geng PRUNE hook. Build: see `build.sh`
 - `test_cdm.py`: independent brute-force cross-checks
-- `logs/`: per-n outputs
+- `logs/`: per-n outputs (n = 18: `cdm_n18_<i>of4.txt`). Before the n = 18 run, the rebuilt binaries reproduced `cdm_n14.txt` exactly.
