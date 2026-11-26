@@ -1,7 +1,7 @@
 # Notik: Singer rulers are unique shortest points of their chambers (arXiv:2611.22656 v1, §7)
 
-**Status:** no counterexample. The conjecture is now verified for every prime power m ≤ 113 and for m = 121 (up to 122 marks; the paper went to 104)
-**Date:** 2026-11-25 · **Tools:** Python, HiGHS (scipy), python-flint, Fractions · **AI-assisted (Claude), unrefereed**
+**Status:** no counterexample up to m = 131. The conjecture is now verified for every prime power m ≤ 131 (up to 132 marks; the paper went to 104)
+**Date:** 2026-11-25, extended 2026-11-26 · **Tools:** Python, HiGHS (scipy), python-flint, Fractions · **AI-assisted (Claude), unrefereed**
 
 ## Statement
 Source: E. Notik, *Golomb rulers with real marks: the real and integer optima agree up to ten marks*, arXiv:2611.22656v1.
@@ -46,12 +46,16 @@ So each chamber has N ≈ n²/2 rows instead of |R_n| ≈ n⁴/8. That makes n >
 | m = 109 (110 marks) | 1,140 classes (2,280 rulers) | all unique |
 | m = 113 (114 marks) | 1,980 classes (3,960 rulers) | all unique |
 | m = 121 = 11² (122 marks) | 648 classes (1,296 rulers) | all unique |
-| Independent `Fraction` re-check (`verify_certificates.py`) | 3 rulers each for m = 107 and 113, 2 for m = 121, plus every ruler for m = 13, 19 and 29 (the first 40) | all certified |
+| m = 125 = 5³ (126 marks) | 828 classes (1,656 rulers) | all unique |
+| m = 127 (128 marks) | 1,806 classes (3,612 rulers) | all unique |
+| m = 128 = 2⁷ (129 marks) | 336 classes (672 rulers) | all unique |
+| m = 131 (132 marks) | 2,882 classes (5,764 rulers) | all unique |
+| Independent `Fraction` re-check (`verify_certificates.py`) | 3 rulers each for m = 107, 113, 125, 127, 128 and 131, 2 for m = 121, plus every ruler for m = 13, 19 and 29 (the first 40) | all certified |
 
-Runs for m = 125, 127, 128 and 131 were started and then stopped. At this size each m costs about 15–25 CPU-minutes.
+m = 125, 127, 128 and 131 were run on 2026-11-26 (`python run.py --list <m> --mirror`, one process per m). Wall time: 1,194 s, 2,623 s, 511 s and 4,089 s. Class counts agree with φ(q)/(6e) for m = pᵉ, since the multiplier group {pⁱ} has order 3e. Outputs: `data/results_<m>_mir.jsonl`, `logs/run_<m>_mir.log`, `logs/indep_<m>.txt`. Every prime power in 113 < m ≤ 131 (121, 125, 127, 128, 131) is now covered.
 
 ## Findings
-1. **New range.** Every Singer ruler (largest-gap cut, every multiplier) for m = 107, 109, 113 and 121 is the unique shortest point of its chamber, certified in exact arithmetic. That is 5,280 mirror classes, or 10,560 rulers. Together with the paper, the conjecture now holds for all prime powers m ≤ 113 and for m = 121.
+1. **New range.** Every Singer ruler (largest-gap cut, every multiplier) for m = 107, 109, 113, 121, 125, 127, 128 and 131 is the unique shortest point of its chamber, certified in exact arithmetic. That is 11,132 mirror classes, or 22,264 rulers. Together with the paper, the conjecture now holds for all prime powers m ≤ 131.
 2. **Chain reduction.** The chamber needs only the n(n−1)/2 consecutive-order rows (proof under Method). This cuts the LP from about n⁴/8 rows to about n²/2, which is what makes n > 104 cheap. The paper does not state this simplification, as far as we could read.
 3. All of the paper's checkable data was reproduced exactly (see the table above).
 

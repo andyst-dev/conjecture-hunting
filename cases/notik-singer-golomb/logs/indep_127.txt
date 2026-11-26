@@ -1,0 +1,4 @@
+  t=1: certified
+  t=2: certified
+  t=4: certified
+m=127: 3 rulers certified exactly, 0 not certified by this checker []
