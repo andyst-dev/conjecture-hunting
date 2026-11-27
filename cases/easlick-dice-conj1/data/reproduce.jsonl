@@ -1,0 +1,8 @@
+{"n": 3, "V": 10, "E": 3, "SCCs": 10, "largest_scc_V": 1, "largest_scc_E": 0, "nontrivial": 0, "secs": 0.0}
+{"n": 4, "V": 35, "E": 67, "SCCs": 35, "largest_scc_V": 1, "largest_scc_E": 0, "nontrivial": 0, "secs": 0.0}
+{"n": 5, "V": 126, "E": 620, "SCCs": 126, "largest_scc_V": 1, "largest_scc_E": 0, "nontrivial": 0, "secs": 0.0}
+{"n": 6, "V": 462, "E": 5491, "SCCs": 450, "largest_scc_V": 7, "largest_scc_E": 10, "nontrivial": 2, "secs": 0.0, "scc_vertices": [[[1, 1, 2, 5, 5, 5], [1, 1, 2, 5, 5, 6], [1, 2, 2, 3, 6, 6], [1, 3, 3, 4, 4, 4], [1, 3, 4, 4, 4, 4], [2, 2, 2, 3, 6, 6], [2, 2, 3, 3, 3, 6]], [[1, 1, 4, 5, 5, 5], [1, 1, 4, 5, 5, 6], [1, 2, 2, 5, 6, 6], [1, 4, 4, 4, 5, 5], [2, 2, 2, 5, 6, 6], [3, 3, 3, 3, 4, 6], [3, 3, 3, 4, 4, 6]]], "cycle_lengths_per_nontrivial_scc": [[3, 3, 3, 6], [3, 3, 3, 6]], "nontrivial_sizes_edges": [[7, 10], [7, 10]]}
+{"n": 7, "V": 1716, "E": 89153, "SCCs": 636, "largest_scc_V": 1081, "largest_scc_E": 53389, "nontrivial": 1, "secs": 0.0}
+{"n": 8, "V": 6435, "E": 956307, "SCCs": 2115, "largest_scc_V": 4321, "largest_scc_E": 674108, "nontrivial": 1, "secs": 0.4}
+{"n": 9, "V": 24310, "E": 12528131, "SCCs": 3860, "largest_scc_V": 20451, "largest_scc_E": 10933011, "nontrivial": 1, "secs": 7.2}
+{"n": 10, "V": 92378, "E": 157244770, "SCCs": 10588, "largest_scc_V": 81791, "largest_scc_E": 147620052, "nontrivial": 1, "secs": 100.5}
