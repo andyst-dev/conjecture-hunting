@@ -3,3 +3,4 @@ networkx
 python-flint
 scipy
 sympy
+pynauty

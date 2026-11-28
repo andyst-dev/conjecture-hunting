@@ -1,0 +1,5 @@
+candidates 113666555 hits 22
+all delta>=2: {12: 1, 14: 2, 16: 4}
+2-conn diam>=4: {}
+minimisers: [('I?ABF?[E?', 12, 7, False)]
+2c-diam4 minimisers: []

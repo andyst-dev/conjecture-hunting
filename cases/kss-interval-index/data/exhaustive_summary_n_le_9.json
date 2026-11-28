@@ -1,0 +1,199 @@
+[
+ {
+  "n": 1,
+  "graphs": 1,
+  "connected": 1,
+  "maxInt": 0,
+  "Int(P_n)": 0,
+  "maxInt_graphs": [
+   "@"
+  ],
+  "delta>=2": 0,
+  "min_noncol_delta2": null,
+  "min_noncol_delta2_graphs": [],
+  "n_min_delta2": 0,
+  "2conn_diam>=4": 0,
+  "min_noncol_2conn_diam4": null,
+  "min_2c_graphs": [],
+  "2(n-4)": -6
+ },
+ {
+  "n": 2,
+  "graphs": 2,
+  "connected": 1,
+  "maxInt": 1,
+  "Int(P_n)": 1,
+  "maxInt_graphs": [
+   "A_"
+  ],
+  "delta>=2": 0,
+  "min_noncol_delta2": null,
+  "min_noncol_delta2_graphs": [],
+  "n_min_delta2": 0,
+  "2conn_diam>=4": 0,
+  "min_noncol_2conn_diam4": null,
+  "min_2c_graphs": [],
+  "2(n-4)": -4
+ },
+ {
+  "n": 3,
+  "graphs": 4,
+  "connected": 2,
+  "maxInt": 4,
+  "Int(P_n)": 4,
+  "maxInt_graphs": [
+   "BW"
+  ],
+  "delta>=2": 1,
+  "min_noncol_delta2": 1,
+  "min_noncol_delta2_graphs": [
+   "Bw"
+  ],
+  "n_min_delta2": 1,
+  "2conn_diam>=4": 0,
+  "min_noncol_2conn_diam4": null,
+  "min_2c_graphs": [],
+  "2(n-4)": -2
+ },
+ {
+  "n": 4,
+  "graphs": 11,
+  "connected": 6,
+  "maxInt": 10,
+  "Int(P_n)": 10,
+  "maxInt_graphs": [
+   "CU",
+   "C]"
+  ],
+  "delta>=2": 3,
+  "min_noncol_delta2": 0,
+  "min_noncol_delta2_graphs": [
+   "C]"
+  ],
+  "n_min_delta2": 1,
+  "2conn_diam>=4": 0,
+  "min_noncol_2conn_diam4": null,
+  "min_2c_graphs": [],
+  "2(n-4)": 0
+ },
+ {
+  "n": 5,
+  "graphs": 34,
+  "connected": 21,
+  "maxInt": 20,
+  "Int(P_n)": 20,
+  "maxInt_graphs": [
+   "DEg"
+  ],
+  "delta>=2": 11,
+  "min_noncol_delta2": 1,
+  "min_noncol_delta2_graphs": [
+   "DFw"
+  ],
+  "n_min_delta2": 1,
+  "2conn_diam>=4": 0,
+  "min_noncol_2conn_diam4": null,
+  "min_2c_graphs": [],
+  "2(n-4)": 2
+ },
+ {
+  "n": 6,
+  "graphs": 156,
+  "connected": 112,
+  "maxInt": 35,
+  "Int(P_n)": 35,
+  "maxInt_graphs": [
+   "ECp_"
+  ],
+  "delta>=2": 61,
+  "min_noncol_delta2": 2,
+  "min_noncol_delta2_graphs": [
+   "EEh_",
+   "EEj_",
+   "EEz_",
+   "EFz_"
+  ],
+  "n_min_delta2": 4,
+  "2conn_diam>=4": 0,
+  "min_noncol_2conn_diam4": null,
+  "min_2c_graphs": [],
+  "2(n-4)": 4
+ },
+ {
+  "n": 7,
+  "graphs": 1044,
+  "connected": 853,
+  "maxInt": 56,
+  "Int(P_n)": 56,
+  "maxInt_graphs": [
+   "F?qa_"
+  ],
+  "delta>=2": 507,
+  "min_noncol_delta2": 5,
+  "min_noncol_delta2_graphs": [
+   "F?zT_",
+   "F?zV_",
+   "F?zv_",
+   "F?~v_"
+  ],
+  "n_min_delta2": 4,
+  "2conn_diam>=4": 0,
+  "min_noncol_2conn_diam4": null,
+  "min_2c_graphs": [],
+  "2(n-4)": 6
+ },
+ {
+  "n": 8,
+  "graphs": 12346,
+  "connected": 11117,
+  "maxInt": 84,
+  "Int(P_n)": 84,
+  "maxInt_graphs": [
+   "G?bB@_"
+  ],
+  "delta>=2": 7442,
+  "min_noncol_delta2": 8,
+  "min_noncol_delta2_graphs": [
+   "G?r@d_",
+   "G?qa`_",
+   "G?ovD_",
+   "G?ovf_",
+   "G?zTb_",
+   "G?zTf_",
+   "G?zVf_",
+   "G?zvf_",
+   "G?~vf_"
+  ],
+  "n_min_delta2": 9,
+  "2conn_diam>=4": 48,
+  "min_noncol_2conn_diam4": 8,
+  "min_2c_graphs": [
+   "G?qa`_",
+   "G?ovD_",
+   "G?ovf_"
+  ],
+  "2(n-4)": 8
+ },
+ {
+  "n": 9,
+  "graphs": 274668,
+  "connected": 261080,
+  "maxInt": 120,
+  "Int(P_n)": 120,
+  "maxInt_graphs": [
+   "H?BDA_g"
+  ],
+  "delta>=2": 197772,
+  "min_noncol_delta2": 10,
+  "min_noncol_delta2_graphs": [
+   "H?B@eOw"
+  ],
+  "n_min_delta2": 1,
+  "2conn_diam>=4": 1944,
+  "min_noncol_2conn_diam4": 13,
+  "min_2c_graphs": [
+   "H?BvfRg"
+  ],
+  "2(n-4)": 10
+ }
+]
