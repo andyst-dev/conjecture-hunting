@@ -5,6 +5,7 @@
 
 ## Statement
 Source: T. Easlick, *Computer-Assisted Results for n-Sided Non-Transitive Dice Taking Face Values in [n]*, arXiv:2610.40321 (document date 30 Oct 2026; version number not shown in the fetched PDF, so treat it as v1). The text was read through a web fetcher in fragments, so the quotes below are short.
+  *Update 2026-11-28:* the arXiv page lists v1 (29 Oct 2026), v2 (19 Nov) and v3 (25 Nov 2026). v3 is retitled *Cycles and Symmetries of Non-Transitive Dice with Minimal and Uniform Winning Advantages*; the n = 6 result is now Theorem 4. Conjecture 1 is worded as before, and "maximum length n" is still undefined. Section 5 of v3 reports cycles of length n + 1 for n = 7, …, 12 as evidence for Conjecture 1. Checked through a web fetcher on the abs page and the v3 HTML.
 
 - **Definition 1.** "We call a non-standard n-sided die to be a die taking face values in [n] such that face values may be repeated." Each face has probability 1/n, and a die is written as a non-decreasing n-tuple. The standard die (1, …, n) "will also occur in the set of non-standard dice", so there are binom(2n−1, n) dice.
 - **Beats.** D_x beats D_y when an independent toss of both gives a strictly larger face on D_x, so P(D_x beats D_y) = #{(i,j) : x_i > y_j} / n². Ties count for neither die.
@@ -18,7 +19,7 @@ Source: T. Easlick, *Computer-Assisted Results for n-Sided Non-Transitive Dice T
 - **(A)** the longest uniform minimal cycle in G_n has length exactly n;
 - **(B)** G_n has a uniform minimal cycle of length n.
 
-The paper's evidence only makes sense under (A). The proof for n = 6 rules out cycles of length 7. Section 4 also says: "For n = 7, 8, 9 and 10, the corresponding directed graphs contain cycles of length strictly greater than n, providing computational evidence for Conjecture 1." Under (A), Conjecture 1 says that for every n ≥ 7, G_n has a cycle of length > n, or has no cycle at all.
+The paper's evidence only makes sense under (A). The proof for n = 6 rules out cycles of length 7. Section 4 also says: "For n = 7, 8, 9 and 10, the corresponding directed graphs contain cycles of length strictly greater than n, providing computational evidence for Conjecture 1." Under (A), Conjecture 1 says that for every n ≥ 7 the longest uniform minimal cycle of G_n does **not** have length exactly n: it is longer, it is shorter, or G_n has no such cycle. We prove the stronger statement that G_n has a cycle longer than n for every n ≥ 7.
 
 ## Prior status
 The paper proves Theorem 1 by exhaustive computation for n = 3, …, 6. For n = 7, …, 10 it gives one cycle of length ≥ n + 1, found by a depth-first search that stops at the first such cycle. For n ≥ 11 it only "surmises" such cycles exist. The conclusion says the general case "remains open". Searches on 27 Nov 2026 found no follow-up work.
@@ -64,7 +65,7 @@ All cycles are in `data/cycles.jsonl` (full graphs) and `data/large_n.jsonl` (sa
 ## General construction (2026-11-28): every n ≥ 49
 Notation: g_n(X, Y) = 2·W(X, Y) − n², where W counts the pairs in which X shows the larger face. An arc of G_n is exactly g_n = δ(n), with δ(n) = 1 for odd n and 2 for even n, since ⌊n²/2⌋ + 1 = (n² + δ(n))/2.
 
-**Lemma 1 (direct sums).** Let X = X₁ ⊕ … ⊕ X_s. Here block X_j is an m_j-die placed on the value range m₁+…+m_{j−1}+1 … m₁+…+m_j, and N = Σ m_j. Then g_N(X, Y) = Σ_j g_{m_j}(X_j, Y_j).
+**Lemma 1 (direct sums).** Let X = X₁ ⊕ … ⊕ X_s and Y = Y₁ ⊕ … ⊕ Y_s with the same ordered block sizes m₁, …, m_s. Here block X_j is an m_j-die placed on the value range m₁+…+m_{j−1}+1 … m₁+…+m_j, and N = Σ m_j. Then g_N(X, Y) = Σ_j g_{m_j}(X_j, Y_j).
 *Proof:* every face of a higher block beats every face of a lower block, so W(X, Y) = Σ_j W(X_j, Y_j) + Σ_{i<j} m_i m_j. Substitute into 2W − N².
 For a block that stays fixed, g(Z, Z) = −Σ_v mult_Z(v)², because 2W(Z, Z) + #ties = m². So a fixed (1) costs 1, a fixed (1,1) costs 4 and a fixed (1,1,1) costs 9. Both formulas are cross-checked against direct counts in `test_additivity.py`.
 
@@ -72,7 +73,7 @@ For a block that stays fixed, g(Z, Z) = −Σ_v mult_Z(v)², because 2W(Z, Z) + 
 - in G_7, a simple cycle A = (A₀ … A₂₃) of length a = 24 and a simple 3-cycle B = (B₀, B₁, B₂), with A₀ = B₀ = x = (1,2,2,4,7,7,7) and no other common vertex;
 - in G_6, a 3-cycle C6 = (1,1,2,5,5,5) → (1,3,3,4,4,4) → (2,2,3,3,3,6).
 
-**The cycle for N.** Let d = δ(N), K = ⌈(N + d)/8⌉ and e = 8K − N − d ∈ {0, 2, 4, 6}. The excess blocks E_e are: nothing for e = 0, one (1,1) for e = 2, two (1,1) for e = 4, one (1,1,1) for e = 6. Their size is s_e = 0, 2, 4, 3 and their total cost is s_e + e. Choose K₆ ∈ {0, 1, 2, 3}, the smallest that works. Set K₇ = K − K₆, r = N − 7K₇ − 6K₆ − s_e ≥ 0, and P = 24(K₇ − 1) + 3. Die number t, for t = 0 … P−1, is the direct sum of:
+**The cycle for N.** Let d = δ(N), K = ⌈(N + d)/8⌉ and e = 8K − N − d ∈ {0, 2, 4, 6}. The excess blocks E_e are: nothing for e = 0, one (1,1) for e = 2, two (1,1) for e = 4, one (1,1,1) for e = 6. Their size is s_e = 0, 2, 4, 3 and their total cost is s_e + e. Set K₇ = K − K₆, r = N − 7K₇ − 6K₆ − s_e and P = 24(K₇ − 1) + 3, where K₆ is the smallest value in {0, 1, 2, 3} for which K₇ ≥ 1, r ≥ 0 and P > N. Die number t, for t = 0 … P−1, is the direct sum of:
 - K₇ *counter* 7-blocks. Block i (i = 0 … K₇−1) walks A^i B A^(K₇−1−i): at time t it is at A_{t mod 24} if t < 24i, at B_{t−24i} if 24i ≤ t < 24i + 3, and at A_{(t−24i−3) mod 24} otherwise;
 - K₆ *passenger* 6-blocks, all at C6_{t mod 3} (3 divides P);
 - the fixed blocks E_e and r fixed 1-blocks (1).
@@ -85,18 +86,27 @@ For a block that stays fixed, g(Z, Z) = −Σ_v mult_Z(v)², because 2W(Z, Z) + 
 - (i) Some counter i is at B₁ or B₂, which are not on A. Then t = 24i + (its index in B).
 - (ii) Otherwise every counter is on A. Counter i shows A_ρ with ρ = t mod 24 while t ≤ 24i, and A_σ with σ = (t − 3) mod 24 once t ≥ 24i + 3. Since 3 ≢ 0 (mod 24), A_ρ ≠ A_σ.
   - So the state vector is (A_σ, …, A_σ, A_ρ, …, A_ρ), with q leading entries A_σ, where q = #{i : 24i + 3 ≤ t}.
-  - The last counter always shows A_ρ, because t < P. It is constant only when q = 0, that is t = 0.
+  - The last counter always shows A_ρ, because t < P. The whole counter vector is constant only when q = 0, that is t = 0.
   - Otherwise q is the position where the value changes, and t lies in [24(q−1) + 3, 24q], an interval of 22 < 24 consecutive integers, so ρ fixes t.
 
-**Lemma 4 (parameters).** For N ≥ 111, K₆ = 0 works: S := N − 7K ≥ (N − 7d − 49)/8 ≥ 6 ≥ s_e and P = 24(K − 1) + 3 ≥ 3N − 18 > N. For 49 ≤ N ≤ 110, the rule above also finds valid parameters; this finite check is run by `construct_all_n.py`, which reports no N ≥ 49 without a plan up to 100,000.
+**Lemma 4 (parameters).** For N ≥ 111, K₆ = 0 works: S := N − 7K ≥ (N − 7d − 49)/8 ≥ 6 ≥ s_e and P = 24(K − 1) + 3 ≥ 3N − 18 > N. For 49 ≤ N ≤ 110, the rule above also finds a K₆ with K₇ ≥ 1, r ≥ 0 and P > N; this finite check is run by `construct_all_n.py`, which reports no N ≥ 49 without a plan up to 100,000.
 
 **Theorem.** For every N ≥ 49, G_N contains a uniform minimal non-transitive cycle of length P_N > N, with P_N ≈ 3N.
 Together with the certified cycles of length n + 1 for 7 ≤ n ≤ 60 (`verify_cycles.py`), every G_n with n ≥ 7 has a cycle longer than n. Under reading (A), Conjecture 1 therefore holds: by Theorem 1, n = 6 is the only n ≥ 3 whose longest uniform minimal cycle has length exactly n.
 
 **Exact verification** (`verify_construction.py`, standalone; it imports nothing from this case):
+- It first checks the ingredients the proof uses for every N: A and B are simple cycles of G_7 with minimal arcs, B₁ and B₂ are not on A, A₀ = B₀, and C6 is a 3-cycle of G_6.
 - It rebuilds the cycle for each N and checks the arc counts with the plain pair count, not with Lemma 1, together with distinctness, face ranges and P > N.
 - Run on 2026-11-28 for every N in 49…400 and for N ∈ {500, 777, 1000, 1001, 2000, 2001}; all pass.
 - An extended run covered every N in 49…1200 and N = 5000 (P = 15,003); all pass (`data/verify_construction_49_1200.log`).
+
+## Review (2026-11-28)
+- **Our own re-read:** Lemmas 1–4 and the final step were checked line by line. One gap was found and fixed. The proof for every N uses facts about A, B and C6 (minimal arcs, simplicity, B₁ and B₂ not on A), but the verifier only checked complete cycles for each N. It now checks those ingredients directly.
+- **Independent referee:** OpenAI Codex (gpt-6.2-sol, codex-cli 0.172.0), read-only, asked to act as a hostile referee. Verdict: *correct under reading (A)*.
+  - It enumerated G₃…G₆ independently. G₃ to G₅ have no cycles; G₆ has six 3-cycles and two 6-cycles, so its longest cycle has length 6.
+  - It recounted the ingredient arcs, rebuilt every cycle for 49 ≤ N ≤ 110, and checked a length-(n+1) certificate for each 7 ≤ n ≤ 60.
+  - Its remarks were all minor or about wording: the paraphrase of (A), equal block sizes in Lemma 1, a vague "it" in Lemma 3, a missing definition of "works" in Lemma 4, and `verify_cycles.py` not failing if a whole n were missing. All are fixed above or in the scripts.
+- Both reviews are AI reviews. The result is still unrefereed.
 
 ## Open leads
 - ~~A uniform construction proving reading (A) for all n ≥ 7~~: done (see "General construction"). The proof is computer-assisted only through finitely many arc counts in G_7 and G_6 and the finite range 49 ≤ N ≤ 110; it is unrefereed.

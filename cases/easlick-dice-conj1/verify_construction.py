@@ -77,7 +77,22 @@ def check(N):
     return P
 
 
+def check_ingredients():
+    """The facts about A, B, C6 that Lemmas 2 and 3 use for every N (not only the N run below)."""
+    for cyc, m in ((A, 7), (B, 7), (C6, 6)):
+        T = m * m // 2 + 1
+        assert all(len(d) == m and d == sorted(d) and all(1 <= v <= m for v in d) for d in cyc)
+        assert len({tuple(d) for d in cyc}) == len(cyc)                  # simple cycle
+        for i in range(len(cyc)):
+            assert sum(1 for f in cyc[i] for g in cyc[(i + 1) % len(cyc)] if f > g) == T
+    assert len(A) == 24 and len(B) == 3 and len(C6) == 3
+    assert A[0] == B[0]                                                  # common vertex x
+    assert not ({tuple(d) for d in A} & {tuple(d) for d in B[1:]})       # B1, B2 not on A
+    print("ingredients: A (24-cycle) and B (3-cycle) in G_7 meet only at x =", A[0], "; C6 is a 3-cycle of G_6")
+
+
 if __name__ == "__main__":
+    check_ingredients()
     args = [int(x) for x in sys.argv[1:]]
     lo, hi = (args[0], args[1]) if len(args) >= 2 else (49, 400)
     extra_N = args[2:] if len(args) > 2 else ([] if len(args) >= 2 else [500, 777, 1000, 1001, 2000, 2001])

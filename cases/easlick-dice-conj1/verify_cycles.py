@@ -42,4 +42,7 @@ for n in sorted(cert):
     has_n, has_more = n in cert[n], any(L > n for L in cert[n])
     print(f"n={n:3d}: certified cycle lengths {sorted(cert[n])}  length n: {has_n}  length > n: {has_more}")
     if not has_more: bad.append(n)
-print("ALL CHECKS PASSED" if not bad else f"no cycle longer than n certified for n in {bad}")
+missing = [n for n in range(7, 61) if n not in cert]   # coverage claimed in CASE.md: every 7 <= n <= 60
+if missing: bad += missing
+print("ALL CHECKS PASSED (every 7 <= n <= 60 covered)" if not bad else f"no cycle longer than n certified for n in {sorted(set(bad))}")
+sys.exit(1 if bad else 0)
