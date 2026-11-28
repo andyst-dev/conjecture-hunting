@@ -161,80 +161,120 @@ def nested_kl_z(chain):
     return list(P), list(Z)
 
 
-def nested_kl_z_uncached(chain):
-    """chain: list of (size, rank) of the cyclic flats X_0 < X_1 < ... < X_k, with X_0 = (0, 0)
-    (loopless) and X_k = (n, r) the whole ground set (no coloops). Ranks and nullities must strictly
-    increase. Returns (P, Z) of the nested matroid with exactly this chain of cyclic flats."""
+def _check_chain(chain):
     chain = [tuple(c) for c in chain]
-    assert chain[0] == (0, 0)
-    sizes = [chain[i][0] - chain[i - 1][0] for i in range(1, len(chain))]
-    rks = [c[1] for c in chain]
+    assert chain[0] == (0, 0), chain
     for i in range(1, len(chain)):
         assert chain[i][1] > chain[i - 1][1] and chain[i][0] - chain[i][1] > chain[i - 1][0] - chain[i - 1][1], chain
-    k = len(sizes)
-    n, r = chain[-1]
+    return chain
 
+
+def _nested_rank_fn(sizes, rks):
+    k = len(sizes)
     def rank(a):
-        best = sum(a)
-        tail = sum(a)
+        best = tail = sum(a)
         for i in range(1, k + 1):
             tail -= a[i - 1]                 # sum_{l > i} a_l
-            best = min(best, rks[i] + tail)
+            if rks[i] + tail < best: best = rks[i] + tail
         return best
+    return rank
 
-    # Every flat F has cyclic part X_j (a member of the chain) and F = X_j u T with T a set of coloops
-    # of M|F, so rk F = r_j + |T| <= r. Enumerate only such profiles: layers 1..j full, |T| <= r - r_j.
-    rk = {}
-    def R(a):
-        if a not in rk: rk[a] = rank(a)
-        return rk[a]
-    def compositions(total, caps):
-        if not caps:
-            yield (); return
-        for x in range(min(total, caps[0]) + 1):
-            for rest in compositions(total - x, caps[1:]):
-                yield (x,) + rest
+
+def _compositions(total, caps):
+    if not caps:
+        yield (); return
+    for x in range(min(total, caps[0]) + 1):
+        for rest in _compositions(total - x, caps[1:]):
+            yield (x,) + rest
+
+
+def _flat_profiles(sizes, rks, rank):
+    """Every flat F has cyclic part X_j and F = X_j u T, T coloops of M|F, so rk F = r_j + |T|.
+    Enumerate profiles with layers 1..j full and |T| <= r - r_j, keep the closed ones."""
+    k = len(sizes); r = rks[-1]
     cand = set()
     for j in range(k + 1):
         head = tuple(sizes[:j])
-        for tail in compositions(r - rks[j], sizes[j:]):
+        for tail in _compositions(r - rks[j], sizes[j:]):
             cand.add(head + tail)
-    flats = []
+    out = []
     for a in cand:
-        ok = True
-        ra = R(a)
-        for l in range(k):
-            if a[l] < sizes[l]:
-                b = list(a); b[l] += 1
-                if R(tuple(b)) == ra:
-                    ok = False; break
-        if ok:
-            flats.append(a)
-    assert R(tuple(sizes)) == r
-    flats.sort(key=lambda a: -rk[a])
-    P = {}
-    for a in flats:
-        ka = rk[a]
-        if ka == r:
-            P[a] = [1]; continue
-        R = []
-        for x in flats:
-            if rk[x] > ka and all(xi >= ai for xi, ai in zip(x, a)):
-                mult = 1
-                for l in range(k):
-                    mult *= comb(sizes[l] - a[l], x[l] - a[l])
-                padd(R, P[x], shift=rk[x] - ka, mult=mult)
-        P[a] = p_from_R(R, r - ka)
-    a0 = tuple([0] * k)
-    assert a0 in P
+        ra = rank(a)
+        if all(a[l] == sizes[l] or rank(a[:l] + (a[l] + 1,) + a[l + 1:]) > ra for l in range(k)):
+            out.append((a, ra))
+    return out
+
+
+def contraction_chain(sizes, rks, rank, f):
+    """Chain of cyclic flats of M/F (nested again; its cyclic flats are Aut-invariant, hence unions of
+    remnant layers, and by the swap lemma they are prefixes of the remnant layers)."""
+    k = len(sizes)
+    keep = [l for l in range(k) if sizes[l] - f[l] > 0]
+    rem = [sizes[l] - f[l] for l in keep]
+    rf = rank(f)
+    def rk2(a):                                   # a over kept layers
+        b = list(f)
+        for x, l in zip(a, keep): b[l] += x
+        return rank(tuple(b)) - rf
+    m = len(keep)
+    chain = []
+    for i in range(m + 1):
+        a = tuple(rem[:i]) + (0,) * (m - i)
+        ra = rk2(a)
+        flat = all(rk2(a[:l] + (a[l] + 1,) + a[l + 1:]) > ra for l in range(i, m))
+        cyc = all(rk2(a[:l] + (a[l] - 1,) + a[l + 1:]) == ra for l in range(i))
+        if flat and cyc:
+            chain.append((sum(rem[:i]), ra))
+    chain = _check_chain(chain)
+    # verify on all profiles if few, else on all profiles with entries in {0, 1, rem-1, rem}
+    sz2 = [chain[i][0] - chain[i - 1][0] for i in range(1, len(chain))]
+    rank2 = _nested_rank_fn(sz2, [c[1] for c in chain])
+    import math
+    # The prefix property is a lemma (CASE.md, "Nested engine"): swapping an element for one of a lower
+    # layer never raises the rank, so a cyclic flat containing layer l contains every lower layer.
+    # The exhaustive check below is kept as a safety net on small contractions only.
+    if math.prod(x + 1 for x in rem) <= 64:
+        test = itertools.product(*[range(x + 1) for x in rem])
+    else:
+        test = ()
+    bounds = [0]
+    for c in chain[1:]: bounds.append(c[0])
+    for a in test:
+        # map profile over remnant layers to profile over chain layers
+        pos = 0; agg = [0] * (len(chain) - 1); cum = 0
+        for x, s_ in zip(a, rem):
+            while cum >= bounds[pos + 1]: pos += 1
+            agg[pos] += x; cum += s_
+        assert rank2(tuple(agg)) == rk2(a), ("contraction chain check failed", sizes, rks, f, chain)
+    return tuple(chain)
+
+
+def nested_kl_z_uncached(chain):
+    """chain: list of (size, rank) of the cyclic flats X_0 < X_1 < ... < X_k, with X_0 = (0, 0)
+    (loopless) and X_k = (n, r) the whole ground set (no coloops). Ranks and nullities must strictly
+    increase. Returns (P, Z) of the nested matroid with exactly this chain of cyclic flats.
+    Recursion: R = sum over flats F != 0 of #(flats of profile f) * t^{rk F} * P(M/F), with M/F nested
+    and computed (cached) from its own chain."""
+    chain = _check_chain(chain)
+    sizes = [chain[i][0] - chain[i - 1][0] for i in range(1, len(chain))]
+    rks = [c[1] for c in chain]
+    k = len(sizes); r = rks[-1]
+    if r == 0:
+        return [1], [1]
+    rank = _nested_rank_fn(sizes, rks)
     R = []
-    for x in flats:
-        if x != a0:
-            mult = 1
-            for l in range(k):
-                mult *= comb(sizes[l], x[l])
-            padd(R, P[x], shift=rk[x], mult=mult)
-    return P[a0], z_from(P[a0], R)
+    for f, rf in _flat_profiles(sizes, rks, rank):
+        if rf == 0:
+            continue
+        mult = 1
+        for l in range(k): mult *= comb(sizes[l], f[l])
+        if rf == r:
+            Pc = [1]
+        else:
+            Pc, _ = _nested_cached(contraction_chain(sizes, rks, rank, f))
+        padd(R, Pc, shift=rf, mult=mult)
+    P = p_from_R(R, r)
+    return P, z_from(P, R)
 
 
 def schubert_expansion(blocks, A, nested=nested_kl_z):

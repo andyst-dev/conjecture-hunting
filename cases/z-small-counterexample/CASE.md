@@ -54,7 +54,7 @@ Not recomputed: the number of flats of G24 (2,047,118). We never enumerate all f
 | A. Paving matroids whose stressed hyperplanes all have one size h (Z = Z(U) + λ(Z(S_h) − Z(U))) | rank 4–10, n ≤ 60, every h, every λ ≤ the constant-weight-code bound U(n, h, r−2); integer λ when U ≤ 3000, a 600-point grid otherwise | float screen + exact check | no realisable failure known: see Findings 2 |
 | B. Golay code shortened at s and punctured at p coordinates, G(s,p) | all s + p ≤ 5 (one code each, since M24 is 5-transitive): rank 7–12, n = 19–23 | exact (condensed expansion) | all 20 real-rooted; only G(0,0) = G24 fails |
 | C. Extended QR [18,9,6], RM(1,4) [16,5,8], RM(2,4) [16,11,4], extended Hamming [8,4,4], and their duals; Golay as control | — | exact | all real-rooted except the Golay control |
-| D. All binary cyclic codes of odd length 7–31, and their parity extensions (no loops or coloops, ≤ 60,000 cyclic flats) | see `data/cyclic.jsonl` | exact | *running; see below* |
+| D. All binary cyclic codes of odd length n (one per divisor of xⁿ + 1), and their parity extensions | **complete for n ≤ 25 (lengths 7–26)**: 256 entries, every non-trivial code analysed. **Partial for n = 27, 29, 31** (lengths 27–32): 14 analysed, 35 skipped as too large (more than 60,000 cyclic flats, a nested chain with ∏(layer + 1) > 3000, or dual dimension > 26); length 31 was stopped after 28 of about 254 entries | exact | 202 matroids analysed (ranks 1–26); the only non-real-rooted ones are the two parity-extended Golay codes (n = 23, both generator polynomials), i.e. G24 again. Skips are listed with their reason in `data/cyclic.jsonl` |
 
 ## Findings
 1. **G24 is fragile.** Removing any single element, by shortening or puncturing, already gives a real-rooted Z, and so do all G(s,p) with s + p ≤ 5. These derivatives are nonetheless the closest-to-failure matroids we have seen. In h(z), defined by Z(t) = t^m h(t + 1/t), two real roots nearly collide: the minimal relative gap is 2·10⁻⁴ to 1.5·10⁻³ in ranks 10–12. Random linear matroids in the predecessor case stayed above 0.86.
@@ -64,7 +64,20 @@ Not recomputed: the number of flats of G24 (2,047,118). We never enumerate all f
    - The two Steiner-admissible failures in rank 4 would need S(3,7,22) or S(3,11,56). Neither exists: their derived designs S(2,6,21) (14 blocks < 21 points) and S(2,10,55) (33 < 55) violate Fisher's inequality.
    - So no realisable single-size paving counterexample is known in rank ≤ 10, n ≤ 60. This is not a proof: near-extremal packings are not ruled out in general.
 
+3. **Cyclic codes** (Scan D): no new counterexample among the 202 binary cyclic and parity-extended cyclic codes analysed. Coverage is complete up to length 26; G24 is the only failure.
+
+## Engineering notes
+- **Nested engine.** P(M) comes from R = Σ_{F ≠ 0} #(flats of profile f)·t^{rk F}·P(M/F), where M/F is again nested and is computed recursively, cached by its chain.
+  - *Lemma:* in a nested matroid, replacing an element by one from a lower layer never raises the rank, by rk(S) = min_i (r_i + |S \ X_i|). So a cyclic flat of M/F that contains a layer contains every lower layer. The chain of M/F therefore consists of prefixes of the remnant layers, and it is read off directly.
+  - The first implementation enumerated all profiles and is kept in `test_zfast.py` as a reference. The new engine matches it on 80 random chains of up to 6 layers.
+- **Bug found and fixed (2026-11-28).** sympy's Sturm `count_roots` counts *distinct* real roots, so a real-rooted polynomial with repeated roots, such as a direct sum, looked non-real-rooted.
+  - It produced 20 false failures in an early run of Scan D.
+  - `real_rooted` now uses the square-free part, and `test_zfast.py` has a regression test.
+  - Scans A–C were unaffected: their "real-rooted" verdicts stand, and Scan A, rerun, is identical.
+- **Speed limit.** Python nested computations with more than about 6 layers take minutes each, which is why Scan D has skips at lengths 27–32. A C version of the nested engine would remove them.
+
 ## Open leads
+- Port the nested engine and the refinement to C, and finish Scan D at lengths 27–32.
 - Self-dual and extremal binary codes of length 20–22 from the classification lists, and other 5-designs.
 - Abstract condensed configurations near Golay's, then a search for realisations.
 - Paving matroids with two or more stressed hyperplane sizes (Scan A covers one size only).

@@ -85,8 +85,18 @@ def unitri_inverse(A):
     return Inv
 
 
-def expansion(labels, A):
-    """Theorem 3.2 with DP over chains; returns (P, Z, number of label sequences)."""
+class TooExpensive(Exception):
+    pass
+
+
+def chain_cost(seq):
+    import math
+    return math.prod(seq[i][0] - seq[i - 1][0] + 1 for i in range(1, len(seq)))
+
+
+def expansion(labels, A, max_cost=None):
+    """Theorem 3.2 with DP over chains; returns (P, Z, number of label sequences).
+    max_cost: refuse (TooExpensive) if some nested chain has prod(layer size + 1) > max_cost."""
     m = len(labels)
     Inv = unitri_inverse(A)
     assert labels[0] == (0, 0), "matroid has loops"
@@ -102,6 +112,10 @@ def expansion(labels, A):
                 key = seq + (labels[c],)
                 acc[key] = acc.get(key, 0) + coef * w
         dp[c] = {s: v for s, v in acc.items() if v != 0}
+    if max_cost is not None:
+        worst = max(chain_cost(s) for s in dp[m - 1])
+        if worst > max_cost:
+            raise TooExpensive(f"nested chain cost {worst} > {max_cost}")
     P, Z = [], []
     cache = {}
     for seq, coef in dp[m - 1].items():

@@ -1,0 +1,65 @@
+NON-REAL-ROOTED within packing bound: {'r': 4, 'n': 22, 'h': 7, 'lam_max': 44, 'U': 44, 'steiner_bound_attainable': True, 'first_bad_lam': 44, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 4, 'n': 46, 'h': 13, 'lam_max': 53, 'U': 52, 'steiner_bound_attainable': False, 'first_bad_lam': 52, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 4, 'n': 52, 'h': 18, 'lam_max': 27, 'U': 26, 'steiner_bound_attainable': False, 'first_bad_lam': 26, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 4, 'n': 56, 'h': 11, 'lam_max': 168, 'U': 168, 'steiner_bound_attainable': True, 'first_bad_lam': 168, 'bad_at_1e12': False}
+r=4 done up to n=60
+NON-REAL-ROOTED within packing bound: {'r': 5, 'n': 23, 'h': 8, 'lam_max': 126, 'U': 125, 'steiner_bound_attainable': False, 'first_bad_lam': 125, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 5, 'n': 47, 'h': 14, 'lam_max': 178, 'U': 174, 'steiner_bound_attainable': False, 'first_bad_lam': 173, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 5, 'n': 48, 'h': 12, 'lam_max': 393, 'U': 388, 'steiner_bound_attainable': False, 'first_bad_lam': 387, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 5, 'n': 57, 'h': 12, 'lam_max': 798, 'U': 798, 'steiner_bound_attainable': True, 'first_bad_lam': 793, 'bad_at_1e12': False}
+r=5 done up to n=60
+NON-REAL-ROOTED within packing bound: {'r': 6, 'n': 19, 'h': 9, 'lam_max': 92, 'U': 84, 'steiner_bound_attainable': False, 'first_bad_lam': 82, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 6, 'n': 24, 'h': 9, 'lam_max': 337, 'U': 333, 'steiner_bound_attainable': False, 'first_bad_lam': 326, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 6, 'n': 37, 'h': 12, 'lam_max': 550, 'U': 524, 'steiner_bound_attainable': False, 'first_bad_lam': 524, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 6, 'n': 41, 'h': 13, 'lam_max': 582, 'U': 555, 'steiner_bound_attainable': False, 'first_bad_lam': 553, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 6, 'n': 48, 'h': 15, 'lam_max': 570, 'U': 556, 'steiner_bound_attainable': False, 'first_bad_lam': 540, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 6, 'n': 49, 'h': 13, 'lam_max': 1481, 'U': 1462, 'steiner_bound_attainable': False, 'first_bad_lam': 1442, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 6, 'n': 49, 'h': 15, 'lam_max': 634, 'U': 604, 'steiner_bound_attainable': False, 'first_bad_lam': 603, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 6, 'n': 54, 'h': 20, 'lam_max': 203, 'U': 194, 'steiner_bound_attainable': False, 'first_bad_lam': 191, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 6, 'n': 57, 'h': 21, 'lam_max': 205, 'U': 195, 'steiner_bound_attainable': False, 'first_bad_lam': 193, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 6, 'n': 58, 'h': 13, 'lam_max': 3560, 'U': 3559, 'steiner_bound_attainable': False, 'first_bad_lam': 3511, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 6, 'n': 60, 'h': 22, 'lam_max': 207, 'U': 199, 'steiner_bound_attainable': False, 'first_bad_lam': 195, 'bad_at_1e12': False}
+r=6 done up to n=60
+NON-REAL-ROOTED within packing bound: {'r': 7, 'n': 20, 'h': 10, 'lam_max': 184, 'U': 168, 'steiner_bound_attainable': False, 'first_bad_lam': 164, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 7, 'n': 25, 'h': 10, 'lam_max': 843, 'U': 832, 'steiner_bound_attainable': False, 'first_bad_lam': 812, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 7, 'n': 38, 'h': 13, 'lam_max': 1608, 'U': 1531, 'steiner_bound_attainable': False, 'first_bad_lam': 1529, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 7, 'n': 42, 'h': 14, 'lam_max': 1746, 'U': 1665, 'steiner_bound_attainable': False, 'first_bad_lam': 1658, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 7, 'n': 49, 'h': 16, 'lam_max': 1746, 'U': 1702, 'steiner_bound_attainable': False, 'first_bad_lam': 1654, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 7, 'n': 50, 'h': 14, 'lam_max': 5291, 'U': 5221, 'steiner_bound_attainable': False, 'first_bad_lam': 5147, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 7, 'n': 50, 'h': 16, 'lam_max': 1984, 'U': 1887, 'steiner_bound_attainable': False, 'first_bad_lam': 1884, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 7, 'n': 55, 'h': 21, 'lam_max': 534, 'U': 508, 'steiner_bound_attainable': False, 'first_bad_lam': 500, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 7, 'n': 58, 'h': 22, 'lam_max': 542, 'U': 514, 'steiner_bound_attainable': False, 'first_bad_lam': 509, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 7, 'n': 59, 'h': 14, 'lam_max': 15004, 'U': 14998, 'steiner_bound_attainable': False, 'first_bad_lam': 14759, 'bad_at_1e12': False}
+r=7 done up to n=60
+NON-REAL-ROOTED within packing bound: {'r': 8, 'n': 25, 'h': 12, 'lam_max': 606, 'U': 531, 'steiner_bound_attainable': False, 'first_bad_lam': 529, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 8, 'n': 26, 'h': 11, 'lam_max': 1993, 'U': 1966, 'steiner_bound_attainable': False, 'first_bad_lam': 1898, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 8, 'n': 29, 'h': 13, 'lam_max': 909, 'U': 827, 'steiner_bound_attainable': False, 'first_bad_lam': 806, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 8, 'n': 32, 'h': 14, 'lam_max': 980, 'U': 882, 'steiner_bound_attainable': False, 'first_bad_lam': 870, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 8, 'n': 35, 'h': 13, 'lam_max': 3918, 'U': 3728, 'steiner_bound_attainable': False, 'first_bad_lam': 3728, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 8, 'n': 35, 'h': 15, 'lam_max': 1044, 'U': 945, 'steiner_bound_attainable': False, 'first_bad_lam': 930, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 8, 'n': 38, 'h': 16, 'lam_max': 1103, 'U': 1007, 'steiner_bound_attainable': False, 'first_bad_lam': 988, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 8, 'n': 39, 'h': 14, 'lam_max': 4481, 'U': 4264, 'steiner_bound_attainable': False, 'first_bad_lam': 4264, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 8, 'n': 41, 'h': 17, 'lam_max': 1156, 'U': 1049, 'steiner_bound_attainable': False, 'first_bad_lam': 1043, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 8, 'n': 43, 'h': 15, 'lam_max': 5007, 'U': 4773, 'steiner_bound_attainable': False, 'first_bad_lam': 4706, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 8, 'n': 44, 'h': 18, 'lam_max': 1204, 'U': 1100, 'steiner_bound_attainable': False, 'first_bad_lam': 1097, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 8, 'n': 50, 'h': 17, 'lam_max': 5135, 'U': 5005, 'steiner_bound_attainable': False, 'first_bad_lam': 4865, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 8, 'n': 51, 'h': 15, 'lam_max': 17991, 'U': 17751, 'steiner_bound_attainable': False, 'first_bad_lam': 17463, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 8, 'n': 51, 'h': 17, 'lam_max': 5953, 'U': 5661, 'steiner_bound_attainable': False, 'first_bad_lam': 5661, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 8, 'n': 60, 'h': 15, 'lam_max': 60016, 'U': 59992, 'steiner_bound_attainable': False, 'first_bad_lam': 58900, 'bad_at_1e12': False}
+r=8 done up to n=60
+NON-REAL-ROOTED within packing bound: {'r': 9, 'n': 26, 'h': 13, 'lam_max': 1213, 'U': 1062, 'steiner_bound_attainable': False, 'first_bad_lam': 1059, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 9, 'n': 27, 'h': 12, 'lam_max': 4485, 'U': 4423, 'steiner_bound_attainable': False, 'first_bad_lam': 4301, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 9, 'n': 30, 'h': 14, 'lam_max': 1949, 'U': 1772, 'steiner_bound_attainable': False, 'first_bad_lam': 1728, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 9, 'n': 33, 'h': 15, 'lam_max': 2157, 'U': 1940, 'steiner_bound_attainable': False, 'first_bad_lam': 1917, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 9, 'n': 36, 'h': 14, 'lam_max': 10076, 'U': 9586, 'steiner_bound_attainable': False, 'first_bad_lam': 9586, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 9, 'n': 36, 'h': 16, 'lam_max': 2351, 'U': 2126, 'steiner_bound_attainable': False, 'first_bad_lam': 2104, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 9, 'n': 39, 'h': 17, 'lam_max': 2530, 'U': 2310, 'steiner_bound_attainable': False, 'first_bad_lam': 2294, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 9, 'n': 40, 'h': 15, 'lam_max': 11951, 'U': 11370, 'steiner_bound_attainable': False, 'first_bad_lam': 11370, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 9, 'n': 44, 'h': 16, 'lam_max': 13770, 'U': 13125, 'steiner_bound_attainable': False, 'first_bad_lam': 13125, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 9, 'n': 50, 'h': 14, 'lam_max': 178780, 'U': 174621, 'steiner_bound_attainable': False, 'first_bad_lam': 174621, 'bad_at_1e12': False}
+r=9 done up to n=60
+NON-REAL-ROOTED within packing bound: {'r': 10, 'n': 28, 'h': 13, 'lam_max': 9660, 'U': 9526, 'steiner_bound_attainable': False, 'first_bad_lam': 9239, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 10, 'n': 31, 'h': 15, 'lam_max': 4027, 'U': 3662, 'steiner_bound_attainable': False, 'first_bad_lam': 3563, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 10, 'n': 34, 'h': 16, 'lam_max': 4584, 'U': 4122, 'steiner_bound_attainable': False, 'first_bad_lam': 4122, 'bad_at_1e12': False}
+NON-REAL-ROOTED within packing bound: {'r': 10, 'n': 37, 'h': 15, 'lam_max': 24855, 'U': 23645, 'steiner_bound_attainable': False, 'first_bad_lam': 23645, 'bad_at_1e12': False}
+r=10 done up to n=60

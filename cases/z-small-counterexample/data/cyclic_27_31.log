@@ -1,0 +1,12 @@
+n=27 g=0b11: rank 26 n 27 cf 2 Z rr True P rr True
+n=27 g=0b111: rank 25 n 27 cf 5 Z rr True P rr True
+n=27 g=0b111 +parity: rank 25 n 28 cf 8 Z rr True P rr True
+n=27 g=0b1001: rank 24 n 27 cf 8 Z rr True P rr True
+n=27 g=0b1001001001001001001001001: rank 3 n 27 cf 8 Z rr True P rr True
+n=27 g=0b1001001001001001001001001 +parity: rank 3 n 28 cf 8 Z rr True P rr True
+n=27 g=0b11011011011011011011011011: rank 2 n 27 cf 5 Z rr True P rr True
+n=27 g=0b111111111111111111111111111: rank 1 n 27 cf 2 Z rr True P rr True
+length 27 done
+n=29 g=0b11: rank 28 n 29 cf 2 Z rr True P rr True
+length 29 done
+n=31 g=0b11: rank 30 n 31 cf 2 Z rr True P rr True

@@ -1,15 +1,17 @@
 """Scan D: every binary cyclic code of odd length n in [NMIN, NMAX] (one per divisor g of x^n + 1 over
 GF(2), excluding the zero and full codes), and its extension by an overall parity bit (length n + 1).
 The column matroid is analysed when it has no loops and no coloops and at most MAXCF cyclic flats.
-Output: data/cyclic.jsonl.  Usage: python3 scan_cyclic.py NMIN NMAX [MAXCF]"""
+Output: data/cyclic.jsonl.  Usage: python3 scan_cyclic.py NMIN NMAX [MAXCF] [MAXCOST]
+Codes whose expansion needs a nested chain with prod(layer size + 1) > MAXCOST are skipped (recorded)."""
 import sys, json, time, itertools
 import flint
 from codes import cyclic_code, extend_parity, columns, weight_distribution
-from condense import cyclic_flats_binary, condense, expansion
+from condense import cyclic_flats_binary, condense, expansion, TooExpensive
 from zfast import real_rooted
 
 nmin, nmax = int(sys.argv[1]), int(sys.argv[2])
 maxcf = int(sys.argv[3]) if len(sys.argv) > 3 else 60000
+MAXCOST = int(sys.argv[4]) if len(sys.argv) > 4 else 3000
 out = open("data/cyclic.jsonl", "a")
 
 
@@ -17,13 +19,20 @@ def analyse(rows, n, tag):
     cols, k = columns(rows, n)
     if k == 0 or k == n or any(c == 0 for c in cols):
         return {"tag": tag, "n": n, "rank": k, "skip": "trivial or loops"}
-    flats, info = cyclic_flats_binary(cols, k)
+    import subprocess
+    try:
+        flats, info = cyclic_flats_binary(cols, k)
+    except subprocess.CalledProcessError as e:
+        return {"tag": tag, "n": n, "rank": k, "skip": "cycflats: " + (e.stderr or "").strip()}
     if len(flats) > maxcf:
         return {"tag": tag, "n": n, "rank": k, "skip": f"{len(flats)} cyclic flats > {maxcf}"}
     members, labels, A = condense(flats)
     if labels[-1][0] != n:
         return {"tag": tag, "n": n, "rank": k, "skip": "coloops"}
-    P, Z, nseq = expansion(labels, A)
+    try:
+        P, Z, nseq = expansion(labels, A, max_cost=MAXCOST)
+    except TooExpensive as e:
+        return {"tag": tag, "n": n, "rank": k, "skip": str(e), "cyclic_flats": len(flats)}
     return {"tag": tag, "n": n, "rank": k, "cyclic_flats": len(flats), "blocks": len(labels),
             "P": P, "Z": Z, "Z_real_rooted": real_rooted(Z),
             "P_real_rooted": real_rooted(P) if len(P) > 2 else True}
