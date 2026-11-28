@@ -14,7 +14,7 @@ All work here is **AI-assisted and unrefereed**. The protocol every case follows
 | [Costa–Luu–Wood–Yip, CDM](cases/cdm-alpha2/CASE.md) | arXiv:2512.17114 | No counterexample on ≤ 17 vertices, exhaustive (paper: ≤ 11); reduction to maximal triangle-free graphs |
 | [Benedetti–Menara, Conj. 7.1](cases/benedetti-menara-7.1/CASE.md) | arXiv:2611.08071 | Proved for all m ≤ 8 by SAT, and r = 2 up to m = 12 exhaustively (paper: random tests only) |
 | [Wild number of K_n, Conj. 6.1](cases/wild-number-kn/CASE.md) | arXiv:2610.22142 | No counterexample: exact SAT values reproduce n ≤ 11; sampled colourings up to n = 23 |
-| [Z-polynomial, rank 4 (exploratory)](cases/z-polynomial-rank4/CASE.md) | PXY18 Conj. 5.1 | Closed-form rank-4 criterion; random linear matroids stay below the threshold (equality only for U_{2,3}⊕U_{2,3}) |
+| [Z-polynomial, rank 4 (exploratory)](cases/z-polynomial-rank4/CASE.md) | PXY18 Conj. 5.1 | **Abandoned:** the general conjecture was already refuted by Eberhardt (arXiv:2609.20903, extended binary Golay matroid). Ours: closed-form rank-4 criterion; random rank-4/5 searches found nothing |
 | [GMR inequality in small groups](cases/gmr-small-groups/CASE.md) | arXiv:2611.12776 (Q9.4) | No counterexample of order < 243 in the families searched (heuristic, calibrated on the paper's 243 witness) |
 | [Notik, Singer rulers and chambers (§7)](cases/notik-singer-golomb/CASE.md) | arXiv:2611.22656 | Verified for m ≤ 113 and m = 121 (paper: m ≤ 103); chain reduction of the chamber LP |
 | [Leake–Mohammadi Yekta, Question 1.7](cases/leake-yekta-q1.7/CASE.md) | arXiv:2609.39917 | No violation of the weighted log-concavity question on 3,471 small unimodular configurations (rank 2–5) and contingency tables up to 3×4 (float screen) |

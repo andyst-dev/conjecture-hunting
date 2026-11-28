@@ -1,10 +1,10 @@
 # Proudfoot–Xu–Young, real-rootedness of the matroid Z-polynomial: rank 4 (exploratory)
 
-**Status:** no counterexample in the classes searched (random, not exhaustive): random simple linear rank-4 matroids over GF(2), GF(3) and GF(5), and a hill-climb over connected rank-5 linear matroids over GF(2) (n ≤ 16) and GF(3) (n ≤ 14), 90 min each. Floating-point screen; the best rank-5 candidates were re-checked exactly. Also derived: a closed-form real-rootedness criterion for rank 4 (4·a2 ≤ W3² + 8); whether every rank-4 matroid satisfies it is not proved.
+**Status:** abandoned. The general conjecture (PXY18, Conj. 5.1) was already refuted before this case started: J. N. Eberhardt, *Condensed configurations and valuative matroid invariants*, arXiv:2609.20903 (17 Sep 2026), shows that the extended binary Golay matroid has non-real-rooted Z- and Kazhdan–Lusztig polynomials. Our own searches (rank 4 over GF(2), GF(3), GF(5); rank 5 over GF(2), GF(3)) found no counterexample in the classes searched (random, not exhaustive). Still open as far as we know: the smallest rank of a counterexample, and rank 4 in particular.
 **Date:** 2026-11-25, long run 2026-11-26 · **AI-assisted (Claude), unrefereed**
 
 ## Why this target
-It is a "domino" candidate. Real-rootedness for Chow, augmented Chow and chain polynomials (arXiv:2610.17135) and for dual Chow (Davis, Nov 2026) has been disproved, and Kazhdan–Lusztig polynomials of matroids need not be unimodal (arXiv:2607.24186). Real-rootedness of Z_M (PXY18, Conj. 5.1) is still open; it is proved for sparse paving matroids (arXiv:2609.07636).
+It is a "domino" candidate. Real-rootedness for Chow, augmented Chow and chain polynomials (arXiv:2610.17135) and for dual Chow (Davis, Nov 2026) has been disproved, and Kazhdan–Lusztig polynomials of matroids need not be unimodal (arXiv:2607.24186). Real-rootedness of Z_M (PXY18, Conj. 5.1) is proved for sparse paving matroids (arXiv:2609.07636). **Correction (2026-11-28):** it is not open in general. Eberhardt (arXiv:2609.20903, 17 Sep 2026) gave a counterexample, the extended binary Golay matroid; the abstract calls it the first in the literature. Our status search missed it, and so did the scout. Found through the symmetricfunctions.com list of real-rootedness problems (updated 27 Nov 2026); we read the arXiv abstract, not the full paper.
 
 ## Rank-4 criterion (derived here)
 For a simple matroid of rank 4, write W2 for the number of lines, W3 for the number of hyperplanes, and |X| for the number of points in a flat X. Then
