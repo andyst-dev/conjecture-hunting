@@ -40,6 +40,9 @@ Two 90-minute runs, one per field, on a local Mac:
 - The margin never fell below about 0.84, the same as the 2-minute smoke runs. On GF(3) the median equals the minimum: the hill-climb keeps returning to the same optimum (Z = 1 + 15t + 50t² + …). The objective does not seem to push towards violation, so a different objective or move set would be needed for a more useful search.
 - Coverage is random, not exhaustive: 756 restarts appended to `data/z_search.jsonl` (lines 76–831).
 
+## Erratum (2026-11-28)
+`real_rooted` in `zpoly.py` compares sympy's Sturm count with the degree, but that count ignores multiplicity. It can therefore report a polynomial with repeated real roots as non-real-rooted. This case never relies on a "non-real-rooted" verdict: no candidate was found, and the two best Z were confirmed real-rooted. So no result here changes. The fixed version, which uses the square-free part, is in [`z-small-counterexample/zfast.py`](../z-small-counterexample/zfast.py).
+
 ## Leads
 - Prove 4a2 ≤ W3² + 8 for all rank-4 matroids. That would settle rank 4 and explain why equality comes from U_{2,3} ⊕ U_{2,3}.
 - A counterexample, if any, is in rank ≥ 5, where the KL coefficients of contractions enter.
