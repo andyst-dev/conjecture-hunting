@@ -1,6 +1,6 @@
 # Proudfoot–Xu–Young, real-rootedness of the matroid Z-polynomial: rank 4 (exploratory)
 
-**Status:** no counterexample in the classes searched (random, not exhaustive): random simple linear rank-4 matroids over GF(2), GF(3) and GF(5), and a hill-climb over connected rank-5 linear matroids over GF(2) (n ≤ 16) and GF(3) (n ≤ 14), 90 min each. Floating-point screen; the best rank-5 candidates were re-checked exactly. Also derived: a closed-form real-rootedness criterion for rank 4 (unproved in general).
+**Status:** no counterexample in the classes searched (random, not exhaustive): random simple linear rank-4 matroids over GF(2), GF(3) and GF(5), and a hill-climb over connected rank-5 linear matroids over GF(2) (n ≤ 16) and GF(3) (n ≤ 14), 90 min each. Floating-point screen; the best rank-5 candidates were re-checked exactly. Also derived: a closed-form real-rootedness criterion for rank 4 (4·a2 ≤ W3² + 8); whether every rank-4 matroid satisfies it is not proved.
 **Date:** 2026-11-25, long run 2026-11-26 · **AI-assisted (Claude), unrefereed**
 
 ## Why this target
